@@ -10,7 +10,7 @@ function initQuiz(containerId, questions) {
 
     // Build quiz HTML
     let html = '<div class="quiz-section">';
-    html += '<h3 class="quiz-title">🧠 Proveri svoje znanje!</h3>';
+    html += '<h3 class="quiz-title">Proveri svoje znanje!</h3>';
 
     questions.forEach((q, qi) => {
         html += '<div class="quiz-question" data-correct="' + q.correct + '">';
@@ -29,8 +29,8 @@ function initQuiz(containerId, questions) {
     });
 
     html += '<div class="quiz-actions">';
-    html += '<button class="quiz-btn quiz-btn-check" onclick="checkQuiz(\'' + containerId + '\')">✅ Proveri odgovore</button>';
-    html += '<button class="quiz-btn quiz-btn-retry" style="display:none;" onclick="retryQuiz(\'' + containerId + '\', quizData[\'' + containerId + '\'])">🔄 Pokušaj ponovo</button>';
+    html += '<button class="quiz-btn quiz-btn-check" onclick="checkQuiz(\'' + containerId + '\')">Proveri odgovore</button>';
+    html += '<button class="quiz-btn quiz-btn-retry" style="display:none;" onclick="retryQuiz(\'' + containerId + '\', quizData[\'' + containerId + '\'])">Pokušaj ponovo</button>';
     html += '</div>';
     html += '<div class="quiz-result" style="display:none;"></div>';
     html += '</div>';
@@ -87,8 +87,7 @@ function checkQuiz(containerId) {
 
     // Show result
     const resultEl = container.querySelector('.quiz-result');
-    const emoji = correct === total ? '🎉' : correct >= total / 2 ? '👍' : '💪';
-    resultEl.innerHTML = emoji + ' Rezultat: <strong>' + correct + '/' + total + '</strong> tačnih odgovora!';
+    resultEl.innerHTML = 'Rezultat: <strong>' + correct + '/' + total + '</strong> tačnih odgovora!';
     resultEl.style.display = 'block';
 
     // Hide check, show retry

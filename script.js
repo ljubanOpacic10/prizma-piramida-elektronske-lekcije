@@ -64,30 +64,25 @@ document.querySelectorAll('.shadowText.drawStep').forEach(function (drawStep) {
 
 
 function toggleIframe(id) {
-    var iframe = document.getElementById(id);
-    if (iframe.style.display === "none" || iframe.style.display === "") {
-        iframe.style.display = "block";
+    var container = document.getElementById(id);
+    if (!container) return;
+
+    if (container.style.display === "none" || container.style.display === "") {
+        container.style.display = "block";
+
+        // Force the iframe to reload so GeoGebra initializes with visible dimensions
+        var iframe = container.querySelector('iframe');
+        if (iframe) {
+            var src = iframe.src;
+            iframe.src = '';
+            setTimeout(function () {
+                iframe.src = src;
+            }, 50);
+        }
     } else {
-        iframe.style.display = "none";
+        container.style.display = "none";
     }
 }
-
-
-
-var params = {
-    "appName": "geometry",
-    "width": 600,
-    "height": 600,
-    "showToolBar": false,
-    "showAlgebraInput": false,
-    "showMenuBar": false,
-    "showToolBarHelp": false,
-};
-var ggbApplet = new GGBApplet(params, true);
-window.addEventListener("load", function () {
-    ggbApplet.inject('ggb-element');
-});
-
 
 
 
@@ -117,9 +112,9 @@ function toggleSolution(button) {
     solutionContent.classList.toggle('show');
 
     if (solutionContent.classList.contains('show')) {
-        button.textContent = '🔼 Sakrij rešenje';
+        button.textContent = ' Sakrij rešenje';
     } else {
-        button.textContent = '🔎 Prikaži rešenje';
+        button.textContent = ' Prikaži rešenje';
     }
 }
 

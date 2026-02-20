@@ -104,9 +104,9 @@
                 </div>
                 <div class="footer-links">
                     <h4>Brza navigacija</h4>
-                    <a href="${base}index.html">🏠 Početna</a>
+                    <a href="${base}index.html"> Početna</a>
                     <a href="${base}prizma/PojamIVrstePrizme/pojamOsnovniEl.html">🔷 Prizma</a>
-                    <a href="${base}piramida/PojamIVrstePiramide/pojamOsnovniEl.html">🔺 Piramida</a>
+                    <a href="${base}piramida/PojamIVrstePiramide/pojamOsnovniEl.html"> Piramida</a>
                 </div>
                 <div class="footer-info">
                     <h4>O projektu</h4>
