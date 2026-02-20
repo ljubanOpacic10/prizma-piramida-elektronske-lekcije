@@ -1,11 +1,11 @@
 /**
- * components.js — Reusable header, sidebar menu, and footer
+ * components.js — Reusable header, dropdown handlers, and footer.
+ * Sidebar menu is now inline in each HTML file for active-state highlighting.
  * Auto-detects page depth to resolve asset paths correctly.
  */
 
 (function () {
     // --- PATH DETECTION ---
-    // Detect base path from the stylesheet link (../../style.css vs style.css)
     function getBasePath() {
         const link = document.querySelector('link[rel="stylesheet"][href*="style.css"]');
         if (!link) return '';
@@ -43,218 +43,8 @@
         </header>`;
     }
 
-    // --- SIDEBAR MENU ---
-    function renderMenu() {
-        const el = document.getElementById('app-menu');
-        if (!el) return;
-
-        el.innerHTML = `
-            <!-- ===== PRIZMA MENI ===== -->
-            <div style="padding: 8px 10px; font-weight: bold; color: rgb(106, 84, 247); font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">
-                Prizma
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Pojam i vrste prizme</p>
-                    <img class="arrowDown" src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}prizma/PojamIVrstePrizme/pojamOsnovniEl.html">Pojam i osnovni elementi</a>
-                    <a href="${base}prizma/PojamIVrstePrizme/vrstePrizme.html">Vrste prizme</a>
-                    <a href="${base}prizma/PojamIVrstePrizme/dijagonale.html">Dijagonale i dijagonalni preseci</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}prizma/KakoDaNactamPrizmu/crtanje.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Kako da nacrtam prizmu?</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Površina i zapremina prizme</p>
-                    <img src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}prizma/PovrsinaZapremina/povrsinaFormule.html">Površina</a>
-                    <a href="${base}prizma/PovrsinaZapremina/zapreminaFormule.html">Zapremina</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Pravilna trostrana prizma</p>
-                    <img src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}prizma/PravilnaTrostranaPrizma/crtanje.html">Crtanje</a>
-                    <a href="${base}prizma/PravilnaTrostranaPrizma/povrsina.html">Površina</a>
-                    <a href="${base}prizma/PravilnaTrostranaPrizma/zapremina.html">Zapremina</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Pravilna četvorostrana prizma</p>
-                    <img src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}prizma/PravilnaCetvorostranaPrizma/crtanje.html">Crtanje</a>
-                    <a href="${base}prizma/PravilnaCetvorostranaPrizma/povrsina.html">Površina</a>
-                    <a href="${base}prizma/PravilnaCetvorostranaPrizma/zapremina.html">Zapremina</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Pravilna šestostrana prizma</p>
-                    <img src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}prizma/PravilnaSestostranaPrizma/crtanje.html">Crtanje</a>
-                    <a href="${base}prizma/PravilnaSestostranaPrizma/povrsina.html">Površina</a>
-                    <a href="${base}prizma/PravilnaSestostranaPrizma/zapremina.html">Zapremina</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}prizma/MrezaPrizme/mrezaPrizme.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Mreža prizme</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}prizma/OsobinePrizme/osobinePrizme.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Osobine prizme</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}prizma/PrimenaUZivotu/primenaPrizme.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Primena u životu</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-
-            <!-- ===== PIRAMIDA MENI ===== -->
-            <div style="padding: 8px 10px; font-weight: bold; color: rgb(106, 84, 247); font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; margin-top: 15px; border-top: 1px solid #e0e0e0; padding-top: 15px;">
-                Piramida
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Pojam i vrste piramide</p>
-                    <img class="arrowDown" src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}piramida/PojamIVrstePiramide/pojamOsnovniEl.html">Pojam i osnovni elementi</a>
-                    <a href="${base}piramida/PojamIVrstePiramide/vrstePiramide.html">Vrste piramide</a>
-                    <a href="${base}piramida/PojamIVrstePiramide/karakteristicniPreseci.html">Karakteristični preseci</a>
-                    <a href="${base}piramida/PojamIVrstePiramide/teoremaOTriNormale.html">Teorema o tri normale</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}piramida/KakoDaNactamPiramidu/crtanje.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Kako da nacrtam piramidu?</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Površina i zapremina piramide</p>
-                    <img src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}piramida/PovrsinaZapremina/povrsinaFormule.html">Površina</a>
-                    <a href="${base}piramida/PovrsinaZapremina/zapreminaFormule.html">Zapremina</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Pravilna trostrana piramida</p>
-                    <img src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}piramida/PravilnaTrostranaPiramida/crtanje.html">Crtanje</a>
-                    <a href="${base}piramida/PravilnaTrostranaPiramida/povrsina.html">Površina</a>
-                    <a href="${base}piramida/PravilnaTrostranaPiramida/zapremina.html">Zapremina</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Pravilna četvorostrana piramida</p>
-                    <img src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}piramida/PravilnaCetvorostranaPiramida/crtanje.html">Crtanje</a>
-                    <a href="${base}piramida/PravilnaCetvorostranaPiramida/povrsina.html">Površina</a>
-                    <a href="${base}piramida/PravilnaCetvorostranaPiramida/zapremina.html">Zapremina</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <p>Pravilna šestostrana piramida</p>
-                    <img src="${base}arrowDown.png" width="20" height="20" />
-                    <div class="decorLine"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="${base}piramida/PravilnaSestostranaPiramida/crtanje.html">Crtanje</a>
-                    <a href="${base}piramida/PravilnaSestostranaPiramida/povrsina.html">Površina</a>
-                    <a href="${base}piramida/PravilnaSestostranaPiramida/zapremina.html">Zapremina</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}piramida/MrezaPiramide/mrezaPiramide.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Mreža piramide</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}piramida/OsobinePiramide/osobinePiramide.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Osobine piramide</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}piramida/PrimenaUZivotu/primenaPiramide.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Primena u životu</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-
-            <div class="dropdown">
-                <a href="${base}piramida/ZarubljenaPiramida/zarubljenaPiramida.html" class="dropbtn" style="text-decoration: none; font-size: small;">
-                    <p>Zarubljena piramida</p>
-                    <div class="decorLine"></div>
-                </a>
-            </div>
-        `;
-    }
-
     // --- DROPDOWN HANDLERS ---
-    // Must be called AFTER renderMenu() so .dropbtn elements exist in the DOM
+    // Attach click handlers to dropdown buttons in the inline sidebar
     function initDropdowns() {
         document.querySelectorAll('#app-menu .dropbtn').forEach(function (button) {
             // Skip link-type dropbtns (e.g. "Kako da nacrtam prizmu?")
@@ -271,9 +61,9 @@
 
                 this.classList.toggle('active');
 
-                // Close other open dropdowns
+                // Close other open dropdowns (but not the one with the active page)
                 document.querySelectorAll('#app-menu .dropdown-content').forEach(function (content) {
-                    if (content !== dropdownContent) {
+                    if (content !== dropdownContent && !content.querySelector('.menu-active')) {
                         content.style.display = 'none';
                         const arrow = content.previousElementSibling ? content.previousElementSibling.querySelector('img') : null;
                         if (arrow) arrow.classList.remove('rotate');
@@ -283,10 +73,11 @@
             });
         });
 
-        // Close dropdowns when clicking outside
+        // Close dropdowns when clicking outside (but keep active page dropdown open)
         document.addEventListener('click', function (event) {
             if (!event.target.closest('#app-menu .dropdown')) {
                 document.querySelectorAll('#app-menu .dropdown-content').forEach(function (content) {
+                    if (content.querySelector('.menu-active')) return;
                     content.style.display = 'none';
                     var arrow = content.previousElementSibling ? content.previousElementSibling.querySelector('img') : null;
                     if (arrow) arrow.classList.remove('rotate');
@@ -301,7 +92,6 @@
         const wrapper = document.querySelector('.wrapper');
         if (!wrapper) return;
 
-        // Don't add footer if one already exists
         if (document.querySelector('.app-footer')) return;
 
         const footer = document.createElement('footer');
@@ -328,14 +118,12 @@
             </div>
         `;
 
-        // Insert footer inside .wrapper at the end
         wrapper.appendChild(footer);
     }
 
     // --- INIT ---
     document.addEventListener('DOMContentLoaded', function () {
         renderHeader();
-        renderMenu();
         initDropdowns();
         renderFooter();
     });

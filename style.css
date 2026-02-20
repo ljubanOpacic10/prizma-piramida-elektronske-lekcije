@@ -163,6 +163,26 @@ body {
     background-color: #f1f1f1;
 }
 
+/* Active page link in dropdown */
+.dropdown-content a.menu-active {
+    background-color: #ede9fe;
+    color: rgb(106, 84, 247);
+    font-weight: bold;
+    border-left: 3px solid rgb(106, 84, 247);
+}
+
+/* Active single-page dropbtn (e.g. "Mreža prizme") */
+a.dropbtn.menu-active {
+    background-color: #f5f3ff;
+    color: rgb(106, 84, 247);
+    font-weight: bold;
+}
+
+a.dropbtn.menu-active p {
+    color: rgb(106, 84, 247);
+    font-weight: bold;
+}
+
 
 
 

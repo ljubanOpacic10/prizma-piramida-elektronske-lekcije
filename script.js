@@ -1,59 +1,29 @@
 window.onload = function () {
     const headingUnderline = document.querySelector('.headingUnderline');
-    setTimeout(() => {
-        headingUnderline.classList.add('expand');
-    }, 300);
+    if (headingUnderline) {
+        setTimeout(() => {
+            headingUnderline.classList.add('expand');
+        }, 300);
+    }
 
     const step1 = document.getElementById('step1');
     const geoGebraFrame = document.getElementById('geoGebraFrame');
 
-    step1.addEventListener('click', function () {
-        if (geoGebraFrame.style.display === 'none') {
-            geoGebraFrame.style.display = 'block';
-            step1.querySelector('img').classList.add('rotate');
-        } else {
-            geoGebraFrame.style.display = 'none';
-            step1.querySelector('img').classList.remove('rotate');
-        }
-    });
-};
-
-document.querySelectorAll('.dropbtn').forEach(button => {
-    button.addEventListener('click', function () {
-        const dropdownContent = this.nextElementSibling;
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-
-        const arrowDown = this.querySelector('img');
-        arrowDown.classList.toggle('rotate');
-
-        this.classList.toggle('active');
-
-        document.querySelectorAll('.dropdown-content').forEach(content => {
-            if (content !== dropdownContent) {
-                content.style.display = 'none';
-                const arrow = content.previousElementSibling.querySelector('img');
-                if (arrow.classList.contains('rotate')) {
-                    arrow.classList.remove('rotate');
-                }
-
-                content.previousElementSibling.classList.remove('active');
+    if (step1 && geoGebraFrame) {
+        step1.addEventListener('click', function () {
+            if (geoGebraFrame.style.display === 'none') {
+                geoGebraFrame.style.display = 'block';
+                step1.querySelector('img').classList.add('rotate');
+            } else {
+                geoGebraFrame.style.display = 'none';
+                step1.querySelector('img').classList.remove('rotate');
             }
-        });
-    });
-});
-
-window.onclick = function (event) {
-
-
-    if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
-        document.querySelectorAll('.dropdown-content').forEach(content => {
-            content.style.display = 'none';
-            const arrow = content.previousElementSibling.querySelector('img');
-            arrow.classList.remove('rotate');
-            content.previousElementSibling.classList.remove('active');
         });
     }
 };
+
+// NOTE: Sidebar dropdown handlers are in components.js (initDropdowns)
+// Do NOT add duplicate dropdown handlers here.
 
 
 document.addEventListener('DOMContentLoaded', () => {
