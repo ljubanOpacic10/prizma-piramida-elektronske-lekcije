@@ -99,13 +99,13 @@
         footer.innerHTML = `
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>🔷 Prizma i Piramida</h3>
+                    <h3> Prizma i Piramida</h3>
                     <p>Elektronske lekcije iz prostorne geometrije za učenike osnovne škole. Interaktivni 3D modeli, formule, rešeni zadaci i kvizovi.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Brza navigacija</h4>
                     <a href="${base}index.html"> Početna</a>
-                    <a href="${base}prizma/PojamIVrstePrizme/pojamOsnovniEl.html">🔷 Prizma</a>
+                    <a href="${base}prizma/PojamIVrstePrizme/pojamOsnovniEl.html"> Prizma</a>
                     <a href="${base}piramida/PojamIVrstePiramide/pojamOsnovniEl.html"> Piramida</a>
                 </div>
                 <div class="footer-info">
