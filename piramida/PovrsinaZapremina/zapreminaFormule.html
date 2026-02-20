@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Zapremina piramide</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Kako se računa zapremina piramide</li>
+                            <li>Zašto je zapremina piramide jednaka trećini zapremine odgovarajuće prizme</li>
+                            <li>Vezu između zapremine prizme i piramide</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contentContainer">
+                        <h2 style="padding: 0; margin-top: 40px;">Veza između zapremine prizme i piramide</h2>
+
+                        <p>Setimo se da je zapremina prizme: \( V_{prizme} = B \cdot H \), gde je \( B \) površina
+                            osnove, a \( H \) visina.</p>
+
+                        <p>Zapremina piramide je tesno vezana za zapreminu prizme sa bazom iste veličine. Može se
+                            dokazati da u prizmu sa istom osnovom i istom visinom staju <b>tačno tri piramide</b>.</p>
+
+                        <h3 style="margin-top: 30px;">Formula za zapreminu piramide</h3>
+                        <p>Zapremina piramide površine osnove \( B \) i visine \( H \) iznosi:</p>
+                        <p class="shadowText" style="margin: auto;">$$ V = \frac{1}{3} \cdot B \cdot H $$</p>
+
+                        <div
+                            style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-left: 4px solid #ff9800; border-radius: 8px; padding: 15px 20px; margin: 30px 0;">
+                            <h4 style="color: #e65100; margin-bottom: 6px;">💡 Probaj eksperiment!</h4>
+                            <p style="color: #333; margin: 0;">Napravi kocku i piramidu sa istom osnovom i istom visinom
+                                od kartona. Sipaj pesak u piramidu i prespi u kocku — biće ti potrebno tačno <b>tri
+                                    presipanja</b> da napuniš kocku! To dokazuje da je zapremina piramide tri puta manja
+                                od zapremine prizme.</p>
+                        </div>
+
+                        <h3 style="margin-top: 30px;">Zašto baš trećina?</h3>
+                        <p>Zapremina pravilne četvorostrane prizme je \( V = a^2 \cdot H \).</p>
+                        <p>U kocku staju tri podudarne piramide, pa zapremina svake od njih mora biti trećina zapremine
+                            kocke. Zato je zapremina piramide jednaka trećini zapremine odgovarajuće prizme:</p>
+
+                        <p class="shadowText" style="margin: auto; margin-bottom: 40px;">$$ V = \frac{1}{3} \cdot a^2
+                            \cdot H $$</p>
+
+                        <h3>Vizuelni dokaz — tri piramide u kocki</h3>
+                        <p>Pogledaj interaktivne 3D modele koji pokazuju kako se tri piramide sklapaju u jednu kocku:
+                        </p>
+
+                        <div style="margin-bottom: 60px;">
+                            <iframe src="https://www.geogebra.org/3d/vs8wwrmz?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+
+                        <div style="margin-bottom: 60px;">
+                            <iframe src="https://www.geogebra.org/3d/zg9ts4ev?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+
+                        <div style="margin-bottom: 60px;">
+                            <iframe src="https://www.geogebra.org/3d/erwf4vfu?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 40px;">
+                        <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                        <ul style="padding-left: 20px;">
+                            <li><b>Zapremina piramide:</b> \( V = \frac{1}{3} \cdot B \cdot H \)</li>
+                            <li>Piramida zauzima <b>trećinu</b> zapremine prizme sa istom osnovom i visinom.</li>
+                            <li>U jednu kocku staju tačno <b>3 jednake piramide</b>.</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koja je formula za zapreminu piramide?',
+                options: ['V = B · H', 'V = 2B + M', 'V = ⅓ · B · H', 'V = B + M'],
+                correct: 2
+            },
+            {
+                type: 'true-false',
+                question: 'U jednu kocku staju tačno 3 jednake piramide.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Koliki je odnos zapremine piramide i prizme sa istom osnovom i visinom?',
+                options: ['½', '⅓', '¼', '⅔'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

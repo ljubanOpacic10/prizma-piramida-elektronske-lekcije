@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+
+    <style>
+        .contentContainer {
+            margin-bottom: 60px;
+        }
+
+        .shadowText {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: fit-content;
+            padding: 10px 20px;
+            /* margin: auto; */
+        }
+    </style>
+    <script src="../../components.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu">
+            </div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+                    <h1>Pojam i osnovni elementi</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Šta je prizma i kako izgleda</li>
+                            <li>Koje su osnove, bočne strane, temena i ivice prizme</li>
+                            <li>Šta je visina prizme i gde se nalazi njeno podnožje</li>
+                            <li>Šta su dijagonale prizme i kako se razlikuju</li>
+                        </ul>
+                    </div>
+
+                    <p class="shadowText"><b style="color: orange;">Prizma</b> je trodimenzionalno geometrijsko telo,
+                        geometrijski poliedar čije su osnove dva paralelna i podudarna mnogougla, dok su njene bočne
+                        strane paralelogrami.</p>
+                    <p>Ako je prizma prava u omotaču su pravougaonici, a ako je kosa, paralelogrami.</p>
+                    <p>Ukoliko su baze prizme paralelogrami, prizma se naziva paralelopiped i ima 6 strana. Ovde možete
+                        videti kako izgleda <span class="geogebra"
+                            onclick="toggleIframe('iframe1')">paralelopiped</span>.</p>
+                    <div id="iframe1" class="iframe-container">
+                        <iframe src="https://www.geogebra.org/3d/eaekuwks?embed" width="100%" height="600"
+                            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                            frameborder="0"></iframe>
+                    </div>
+
+                    <h3 style="margin-top: 50px;">Delovi prizme</h3>
+                    <ol>
+                        <li><span class="geogebra" onclick="toggleIframe('iframe2')">Osnova (Baza): </span> (Baze su
+                            označene crvenom bojom)</li>
+                        <div id="iframe2" class="iframe-container">
+                            <iframe src="https://www.geogebra.org/3d/qa6xv5q7?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+
+                        <li><span class="geogebra" onclick="toggleIframe('iframe3')">Bočne Strane:</span> (<b>Bočne
+                                strane</b> označene crvenom bojom, a <b>baze</b> plavom bojom)</li>
+                        <div id="iframe3" class="iframe-container">
+                            <iframe src="https://www.geogebra.org/3d/hk2n4euf?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+                    </ol>
+
+                    <h3 style="margin-top: 50px;">Osnovni elementi prizme</h3>
+                    <ul>
+                        <li>
+                            <h4>Temena <span class="geogebra" onclick="toggleIframe('iframe4')">Pogledaj temena</span>
+                            </h4>
+                            <div id="iframe4" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/uzf8tyfk?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto;">Temena su prikazana crvenom bojom</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h4>Ivice prizme</h4>
+                            <p>Stranice osnova se nazivaju <span class="geogebra"
+                                    onclick="toggleIframe('iframe5')">osnovnim ivicama prizme</span>. Stranice bočnih
+                                strana, koje ne pripadaju osnovama, se nazivaju <span class="geogebra"
+                                    onclick="toggleIframe('iframe6')">bočnim ivicama prizme</span></p>
+                            <div id="iframe5" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/xvjwrwbk?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto;">Osnovne ivice su prikazane plavom bojom, a
+                                    bočne crvenom</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h4>Visina prizme</h4>
+                            <p>Duž čiji krajevi pripadaju ravnima osnova prizme i koja je normalna na ravni osnova
+                                naziva se visina prizme.</p>
+                            <span class="geogebra" onclick="toggleIframe('iframe7')">(Pogledaj kako izgleda visina
+                                prizme)</span>.
+
+                            <div id="iframe7" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/q8gmwdnu?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto;">Visina prizme je prikazana crvenom linijom
+                                </p>
+                            </div>
+
+                            <p>Podnožje visine prizme se nalazi u preseku simetrala osnovnih ivica prizme. <span
+                                    class="geogebra" onclick="toggleIframe('iframe10')">(Pogledaj)</span></p>
+                            <div id="iframe10" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/sc4xewpv?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto; margin-bottom: 30px;">Pravilna četvorostrana
+                                    prizma</p>
+                                <iframe src="https://www.geogebra.org/3d/ahctca5u?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto;">Trostrana prizma koja nema pravilne
+                                    trouglove u osnovi</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h4>Dijagonala prizme</h4>
+                            <p>Duž koja spaja dva temena prizme, koja ne pripadaju istoj strani prizme, naziva se
+                                dijagonala prizme.</p>
+                            <span class="geogebra" onclick="toggleIframe('iframe8')">Pogledaj gde se nalaze dijagonale
+                                prizme</span>.
+
+                            <div id="iframe8" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/nndbcd6r?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto;">Dijagonala osnove - <span
+                                        style="color: red;">crvena</span>, Dijagonala bočne strane - <span
+                                        style="color: purple;">ljubičasta</span>, Dijagonala prizme - <span
+                                        style="color: green;">zelena</span></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div
+                        style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-left: 4px solid #ff9800; border-radius: 8px; padding: 15px 20px; margin-top: 30px;">
+                        <h3 style="color: #e65100; margin-bottom: 8px; font-size: 1.1em;">🤔 Da li si znao?</h3>
+                        <p>Kristali soli imaju oblik <b>kocke</b>, koja je poseban slučaj pravilne četvorostrane prizme!
+                            Mnogi minerali u prirodi imaju oblike prizmi — na primer, kristali kvarca imaju oblik
+                            šestostrane prizme.</p>
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 30px;">
+                        <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                        <ul style="padding-left: 20px;">
+                            <li><b>Prizma</b> je poliedar sa dve paralelne i podudarne osnove i bočnim stranama koje su
+                                paralelogrami.</li>
+                            <li><b>Osnove</b> su dva podudarna mnogougla, a <b>omotač</b> čine bočne strane.</li>
+                            <li><b>Visina</b> prizme je rastojanje između ravni osnova.</li>
+                            <li><b>Dijagonale</b> mogu biti: dijagonale osnove, dijagonale bočnih strana i dijagonale
+                                prizme.</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koliko temena ima pravilna trostrana prizma?',
+                options: ['3', '6', '8', '12'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Bočne strane prave prizme su uvek pravougaonici.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Šta je visina prizme?',
+                options: ['Dijagonala osnove', 'Bočna ivica', 'Rastojanje između ravni osnova', 'Obim osnove'],
+                correct: 2
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

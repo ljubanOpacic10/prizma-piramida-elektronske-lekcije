@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Zapremina pravilne trostrane prizme</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Formulu za zapreminu pravilne trostrane prizme</li>
+                            <li>Kako izračunati površinu baze (jednakostračnog trougla)</li>
+                            <li>Kako rešiti zadatke sa različitim datim veličinama</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contentContainer">
+                        <h2>Kako se računa zapremina pravilne trostrane prizme</h2>
+
+                        <div class="contentContainer">
+                            <p class="shadowText"><span style="color: orange; font-weight: bold;">Zapremina pravilne
+                                    trostrane prizme</span> računa se kao proizvod površine baze i visine prizme</p>
+
+                        </div>
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Površina baze</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Osnova pravilne trostrane prizme je jednakostranični trougao. Površina jednakostraničnog
+                                trougla može se izračunati pomoću formule:</p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ B = \frac{a^2 \sqrt{3}}{4} $$
+
+                            </p>
+
+                            <p>a - dužina stranice jednakostraničnog trougla.</p>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Ukupna zapremina prizme</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Zapremina pravilne trostrane prizme se računa:</p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ V = B \cdot H $$
+                            </p>
+
+                            <p>Zamenimo formule za površinu baze:</p>
+
+                            <p class="shadowText" style="margin: auto;">
+                                $$ V = \frac{a^2 \sqrt{3}}{4} \cdot H $$
+
+
+                            </p>
+
+                        </div>
+
+
+                        <h2>Zadaci:</h2>
+                        <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                            <div style="padding-top: 4px;">
+                                <div
+                                    style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                    1</div>
+                            </div>
+                            <div>Izračunaj zapreminu pravilne trostrane prizme, ako je dužina njene osnovne ivice
+                                \( 4 \, \text{cm} \), a visina \( 7 \, \text{cm} \).</div>
+                        </div>
+                        <div class="questionArea" style="display: flex;">
+                            <img src="../../Assets/TrostranaZadatak2.png" alt="Slika zadatka" width="30%">
+
+                            <div
+                                style="width: 70%; display: flex; flex-direction: row; gap: 70px; justify-content: center; align-items: center; text-align: center;">
+                                <div>
+                                    <div>
+                                        $$a = 4\,\text{cm}$$
+                                    </div>
+
+                                    <div>
+                                        $$H = 7\,\text{cm}$$
+                                    </div>
+
+                                    <div>
+                                        $$B = \frac{a^2 \sqrt{3}}{4}$$
+                                    </div>
+
+                                    <div>
+                                        $$B = \frac{4^2 \sqrt{3}}{4}$$
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid orange;">
+                                        $$B = 4 \sqrt{3} \,\text{cm}^2$$
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        $$V = B \cdot H$$
+                                    </div>
+
+                                    <div>
+                                        $$V = 4 \sqrt{3} \cdot 7$$
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid orange;">
+                                        $$V = 28 \sqrt{3} \,\text{cm}^3$$
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                            <div style="padding-top: 4px;">
+                                <div
+                                    style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                    2</div>
+                            </div>
+                            <div>Izračunaj zapreminu pravilne trostrane prizme, ako je njena visina
+                                \( 10 \, \text{cm} \) i poluprečnik kružnice opisane oko osnove
+                                \( 8\sqrt{3} \, \text{cm} \).</div>
+                        </div>
+                        <div class="questionArea" style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="../../Assets/TrostranaZadatak5.png" alt="Slika zadatka" width="50%">
+
+                            <div
+                                style="width: 50%; display: flex; flex-direction: row; gap: 70px; justify-content: center; align-items: center; text-align: center;">
+                                <div>
+                                    <div>
+                                        $$H = 10\,\text{cm}$$
+                                    </div>
+
+                                    <div>
+                                        $$\mu_0 = 8\sqrt{3}\,\text{cm}$$
+                                    </div>
+
+                                    <div>
+                                        $$\mu = \frac{2}{3} \cdot h$$
+                                    </div>
+
+                                    <div>
+                                        $$\mu_0 = \frac{8}{3} \cdot \frac{a \sqrt{3}}{2}$$
+                                    </div>
+
+                                    <div>
+                                        $$\mu_0 = \frac{a \sqrt{3}}{3}$$
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        $$8\sqrt{3} = a \sqrt{3}$$
+                                    </div>
+
+                                    <div>
+                                        $$a \sqrt{3} = 30$$
+                                    </div>
+
+                                    <div>
+                                        $$a = \frac{30}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}$$
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid orange;">
+                                        $$a = 10\sqrt{3}\,\text{cm}$$
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        $$V = B \cdot H$$
+                                    </div>
+
+                                    <div>
+                                        $$V = \frac{a^2 \sqrt{3}}{4} \cdot H$$
+                                    </div>
+
+                                    <div>
+                                        $$V = \frac{(10\sqrt{3})^2 \sqrt{3}}{4} \cdot 10$$
+                                    </div>
+
+                                    <div>
+                                        $$V = \frac{300\sqrt{3}}{4} \cdot 10$$
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid orange;">
+                                        $$V = 750\sqrt{3} cm^3$$
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div
+                    style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-left: 4px solid #ff9800; border-radius: 8px; padding: 15px 20px; margin-top: 30px;">
+                    <h3 style="color: #e65100; margin-bottom: 8px; font-size: 1.1em;">🤔 Da li si znao?</h3>
+                    <p>Staklena prizma koja razbija svetlost u dugine boje je upravo <b>trostrana prizma</b>! Isak Njutn
+                        je 1666. koristio takvu prizmu i otkrio da se bela svetlost sastoji od svih boja spektra. Tu
+                        ideju možeš videti i na omotu albuma <b>"The Dark Side of the Moon"</b> benda Pink Floyd.</p>
+                </div>
+
+                <div
+                    style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 30px;">
+                    <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                    <ul style="padding-left: 20px;">
+                        <li><b>Površina baze:</b> \( B = \frac{a^2\sqrt{3}}{4} \)</li>
+                        <li><b>Zapremina:</b> \( V = B \cdot H = \frac{a^2\sqrt{3}}{4} \cdot H \)</li>
+                    </ul>
+                </div>
+
+                <div id="lesson-quiz"></div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koja je formula za zapreminu pravilne trostrane prizme?',
+                options: ['V = a² · H', 'V = (a²√3 / 4) · H', 'V = 3aH', 'V = ⅓ · B · H'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Za izračunavanje zapremine trostrane prizme, prvo treba izračunati površinu baze.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Ako je ivica osnove a = 4 cm, kolika je površina baze B?',
+                options: ['4 cm²', '4√3 cm²', '8 cm²', '16 cm²'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

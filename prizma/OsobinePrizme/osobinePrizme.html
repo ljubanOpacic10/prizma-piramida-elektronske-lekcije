@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Osobine prizme – Prizma i Piramida</title>
+    <script src="../../components.js"></script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <div class="menu" id="app-menu"></div>
+
+            <div class="lecture">
+                <div class="lectureContainer">
+                    <h1>Osobine prizme</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div class="lesson-objectives">
+                        <h3>📋 Ciljevi lekcije</h3>
+                        <ul>
+                            <li>Upoznati se sa osnovnim osobinama prizme</li>
+                            <li>Naučiti i primeniti Ojlerovu formulu</li>
+                            <li>Razumeti odnose između elemenata prizme</li>
+                            <li>Upoznati se sa simetrijom prizme</li>
+                        </ul>
+                    </div>
+
+                    <!-- Osnovne osobine -->
+                    <div class="contentContainer">
+                        <h2>Osnovne osobine prizme</h2>
+
+                        <p>Svaka prizma ima karakteristične osobine koje proizilaze iz njene definicije:</p>
+
+                        <ul>
+                            <li><b>Dve osnove su paralelne i podudarne</b> (iste oblike i veličine)</li>
+                            <li><b>Bočne strane su paralelogrami</b> (kod prave prizme — pravougaonici)</li>
+                            <li><b>Bočne ivice su paralelne i jednake dužine</b></li>
+                            <li>Prizma sa \( n \)-stranom osnovom ima \( n \) bočnih strana</li>
+                        </ul>
+                    </div>
+
+                    <!-- Elementi prizme - tabela -->
+                    <div class="contentContainer">
+                        <h2>Elementi prizme sa \( n \)-stranom osnovom</h2>
+
+                        <table class="property-table">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Formula</th>
+                                    <th>Trostrana (n=3)</th>
+                                    <th>Četvorostrana (n=4)</th>
+                                    <th>Šestostrana (n=6)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Temena (V)</b></td>
+                                    <td>\( 2n \)</td>
+                                    <td>6</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Ivice (I)</b></td>
+                                    <td>\( 3n \)</td>
+                                    <td>9</td>
+                                    <td>12</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Strane (S)</b></td>
+                                    <td>\( n + 2 \)</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Bočne strane</b></td>
+                                    <td>\( n \)</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Dijagonale osnove</b></td>
+                                    <td>\( \frac{n(n-3)}{2} \)</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Prostorne dijagonale</b></td>
+                                    <td>\( n(n-3) \)</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>18</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Ojlerova formula -->
+                    <div class="contentContainer">
+                        <h2>Ojlerova formula</h2>
+
+                        <p>Švajcarski matematičar <b>Leonhard Ojler</b> otkrio je važnu vezu između temena, ivica i
+                            strana svakog konveksnog poliedra (uključujući prizmu):</p>
+
+                        <div class="formula-box">
+                            <h4>⭐ Ojlerova formula za poliedre</h4>
+                            <p>$$ V - I + S = 2 $$</p>
+                            <p>gde je: \( V \) — broj temena, \( I \) — broj ivica, \( S \) — broj strana</p>
+                        </div>
+
+                        <h3>Provera za prizme</h3>
+
+                        <p><b>Trostrana prizma:</b> \( V = 6, \, I = 9, \, S = 5 \)</p>
+                        <p>$$ 6 - 9 + 5 = 2 \checkmark $$</p>
+
+                        <p><b>Četvorostrana prizma:</b> \( V = 8, \, I = 12, \, S = 6 \)</p>
+                        <p>$$ 8 - 12 + 6 = 2 \checkmark $$</p>
+
+                        <p><b>Šestostrana prizma:</b> \( V = 12, \, I = 18, \, S = 8 \)</p>
+                        <p>$$ 12 - 18 + 8 = 2 \checkmark $$</p>
+
+                        <p><b>Opšta \( n \)-strana prizma:</b></p>
+                        <p>$$ 2n - 3n + (n+2) = 2n - 3n + n + 2 = 2 \checkmark $$</p>
+                    </div>
+
+                    <!-- Prava vs kosa prizma -->
+                    <div class="contentContainer">
+                        <h2>Prava i kosa prizma</h2>
+
+                        <table class="property-table">
+                            <thead>
+                                <tr>
+                                    <th>Osobina</th>
+                                    <th>Prava prizma</th>
+                                    <th>Kosa prizma</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bočne ivice</td>
+                                    <td>Normalne na osnovu</td>
+                                    <td>Nagnute u odnosu na osnovu</td>
+                                </tr>
+                                <tr>
+                                    <td>Bočne strane</td>
+                                    <td>Pravougaonici</td>
+                                    <td>Paralelogrami</td>
+                                </tr>
+                                <tr>
+                                    <td>Visina</td>
+                                    <td>Jednaka bočnoj ivici</td>
+                                    <td>Kraća od bočne ivice</td>
+                                </tr>
+                                <tr>
+                                    <td>Zapremina</td>
+                                    <td>\( V = B \cdot H \)</td>
+                                    <td>\( V = B \cdot H \)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="fun-fact">
+                            <h4>💡 Važno!</h4>
+                            <p>Formula za zapreminu \( V = B \cdot H \) važi i za pravu i za kosu prizmu! Bitna je
+                                visina — normalno rastojanje između osnova, a ne dužina bočne ivice.</p>
+                        </div>
+                    </div>
+
+                    <!-- Simetrija prizme -->
+                    <div class="contentContainer">
+                        <h2>Simetrija prizme</h2>
+
+                        <p>Pravilna \( n \)-strana prizma poseduje bogatu simetriju:</p>
+
+                        <ul>
+                            <li><b>Ravan simetrije paralelna osnovama</b> — prolazi kroz sredinu visine, deli prizmu na
+                                dva jednaka dela</li>
+                            <li><b>\( n \) ravni simetrije normalnih na osnove</b> — svaka prolazi kroz osu prizme</li>
+                            <li><b>Osa simetrije</b> — prava koja prolazi kroz centre obe osnove (osa prizme)</li>
+                            <li><b>Centar simetrije</b> — središte segmenta između centara osnova</li>
+                        </ul>
+
+                        <p>Na primer, pravilna šestostrana prizma ima <b>7 ravni simetrije</b> (1 + 6) i <b>7 osa
+                                simetrije</b>.</p>
+                    </div>
+
+                    <!-- Dijagonalni preseci -->
+                    <div class="contentContainer">
+                        <h2>Preseci prizme ravni</h2>
+
+                        <p>Kada ravan seče prizmu, nastaje presek koji može biti:</p>
+
+                        <div class="real-world-example">
+                            <h4>📐 Presek paralelan osnovi</h4>
+                            <p>Daje figuru <b>podudarnu osnovi</b>. Na primer, presek kvadra ravni paralelnom osnovi je
+                                pravougaonik istih dimenzija kao osnova.</p>
+                        </div>
+
+                        <div class="real-world-example">
+                            <h4>📐 Dijagonalni presek</h4>
+                            <p>Ravan kroz dve nasuprotne bočne ivice seče prizmu po <b>dijagonalnom preseku</b> — to je
+                                pravougaonik čije su stranice dijagonala osnove i visina prizme.</p>
+                        </div>
+
+                        <div class="real-world-example">
+                            <h4>📐 Normalni presek</h4>
+                            <p>Ravan normalna na bočne ivice seče kosu prizmu po preseku koji je <b>podudaran
+                                    osnovi</b>. Kod prave prizme, normalni presek je identičan osnovi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Rešeni zadaci -->
+                    <div class="contentContainer">
+                        <h2>Rešeni zadaci</h2>
+
+                        <div class="task-card">
+                            <h4>Zadatak 1: Ojlerova formula</h4>
+                            <p>Prizmu ima 10 temena. Koliko ima ivica i strana?</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Iz \( V = 2n \) nalazimo broj strana osnove:</b></p>
+                                <p>$$ 2n = 10 \Rightarrow n = 5 $$</p>
+                                <p><b>Broj ivica:</b> \( I = 3n = 3 \cdot 5 = 15 \)</p>
+                                <p><b>Broj strana:</b> \( S = n + 2 = 5 + 2 = 7 \)</p>
+                                <p><b>Provera:</b> \( 10 - 15 + 7 = 2 \checkmark \)</p>
+                                <p><b>Odgovor:</b> Prizma ima <b>15 ivica</b> i <b>7 strana</b>.</p>
+                            </div>
+                        </div>
+
+                        <div class="task-card">
+                            <h4>Zadatak 2: Prostorne dijagonale</h4>
+                            <p>Koliko prostornih dijagonala ima pravilna šestostrana prizma?</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Formula za prostorne dijagonale:</b></p>
+                                <p>$$ d = n(n-3) $$</p>
+                                <p>$$ d = 6 \cdot (6-3) = 6 \cdot 3 = 18 $$</p>
+                                <p><b>Odgovor:</b> Pravilna šestostrana prizma ima <b>18 prostornih dijagonala</b>.</p>
+                            </div>
+                        </div>
+
+                        <div class="task-card">
+                            <h4>Zadatak 3: Dijagonalni presek</h4>
+                            <p>Pravilna četvorostrana prizma ima stranicu osnove \( a = 5 \) cm i visinu \( H = 12 \)
+                                cm. Izračunaj površinu dijagonalnog preseka.</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Dijagonala osnove (kvadrat):</b></p>
+                                <p>$$ d = a\sqrt{2} = 5\sqrt{2} \approx 7.07 \text{ cm} $$</p>
+                                <p><b>Dijagonalni presek je pravougaonik sa stranicama \( d \) i \( H \):</b></p>
+                                <p>$$ P_{\text{presek}} = d \cdot H = 5\sqrt{2} \cdot 12 = 60\sqrt{2} \approx 84.85
+                                    \text{ cm}^2 $$</p>
+                                <p><b>Odgovor:</b> Površina dijagonalnog preseka je \( 60\sqrt{2} \approx 84.85 \) cm².
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fun-fact">
+                        <h4>💡 Da li si znao?</h4>
+                        <p>Leonhard Ojler (1707-1783) je bio jedan od najproduktivnijih matematičara u istoriji. Njegova
+                            formula \( V - I + S = 2 \) važi za sve konveksne poliedre, ne samo za prizme!</p>
+                    </div>
+
+                    <div class="lesson-summary">
+                        <h3>📝 Rezime lekcije</h3>
+                        <ul>
+                            <li>Prizma sa \( n \)-stranom osnovom ima \( 2n \) temena, \( 3n \) ivica i \( n+2 \) strana
+                            </li>
+                            <li>Ojlerova formula: \( V - I + S = 2 \) važi za sve konveksne poliedre</li>
+                            <li>Prava prizma ima pravougaonike kao bočne strane, kosa prizma ima paralelograme</li>
+                            <li>Dijagonalni presek prizme je pravougaonik</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koliko strana ima prizma sa petougaonom osnovom?',
+                options: ['5', '7', '10', '12'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Ojlerova formula glasi: V + I - S = 2.',
+                correct: 1
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Koliko ivica ima pravilna četvorostrana prizma?',
+                options: ['8', '10', '12', '16'],
+                correct: 2
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

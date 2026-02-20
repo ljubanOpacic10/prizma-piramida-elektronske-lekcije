@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Površina pravilne trostrane piramide</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Kako izračunati površinu baze (jednakostraničnog trougla)</li>
+                            <li>Kako izračunati površinu omotača pravilne trostrane piramide</li>
+                            <li>Kako primeniti formulu na konkretnim zadacima</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contentContainer">
+                        <h2>Kako se računa površina pravilne trostrane piramide</h2>
+
+                        <div class="contentContainer">
+                            <p class="shadowText"><span style="color: orange; font-weight: bold;">Površina pravilne
+                                    trostrane piramide</span> računa se kao zbir površine njenih baza i omotača (bočnih
+                                strana)</p>
+
+                        </div>
+
+                        <div style="margin-bottom: 54px;">
+                            <iframe src="https://www.geogebra.org/3d/qfu97ce8?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Površina baze</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Osnova pravilne trostrane piramide je jednakostranični trougao. Površina
+                                jednakostraničnog trougla može se izračunati pomoću formule:</p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ B = \frac{a^2 \sqrt{3}}{4} $$
+                            </p>
+
+                            <p><b>𝑎</b> - dužina stranice jednakostraničnog trougla.</p>
+                        </div>
+
+
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Površina omotača</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Omotač piramide sastoji se od tri trougla (bočne strane), gde je
+                                𝑎 osnovna ivica baze
+                                , a visina
+                                h
+                                je visina trougla (bočne strane). Površina omotača je zbir površina svih tih trouglova:
+                            </p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                \( M = 3 \cdot \left( \frac{a \cdot h}{2} \right) \)
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Ukupna površina</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Ukupna površina pravilne trostrane piramide je zbir površine baze i omotača:</p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ P = B + M $$
+                            </p>
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <h2>Zadaci:</h2>
+                    <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                        <div style="padding-top: 4px;">
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                7</div>
+                        </div>
+                        <div>Odredi površinu pravilne trostrane piramide ako joj je visina \( 8 \, \text{cm} \), a
+                            apotema \( 10 \, \text{cm} \).</div>
+                    </div>
+                    <div class="questionArea" style="display: flex; flex-direction: column;">
+                        <img src="../../Assets/piramida/TrostranaZadatak1.png" alt="Slika zadatka" width="100%">
+
+                        <div
+                            style="width: 100%; display: flex; flex-direction: row; gap: 70px; justify-content: center; align-items: center; text-align: center;">
+                            <div>
+                                <div>
+                                    $$H = 8\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$h = 10\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$P = ?$$
+                                </div>
+
+                                <div>
+                                    $$h^2 = H^2 + Vu^2$$
+                                </div>
+
+                                <div>
+                                    $$100 = 64 + Vu^2$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$Vu = 6\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$r_{\text{u}} = \frac{6\sqrt{3}}{6}$$
+                                </div>
+
+                                <div>
+                                    $$\frac{a\sqrt{3}}{6} = 6$$
+                                </div>
+
+                                <div>
+                                    $$a\sqrt{3} = 36$$
+                                </div>
+
+                                <div>
+                                    $$a = \frac{36}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$a = 12\sqrt{3}\,\text{cm}$$
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    $$P = B + M$$
+                                </div>
+
+                                <div>
+                                    $$P = \frac{a^2\sqrt{3}}{4} + 3 \cdot \frac{a \cdot h}{2}$$
+                                </div>
+
+                                <div>
+                                    $$P = \frac{\left(12\sqrt{3}\right)^2 \sqrt{3}}{4} + 3 \cdot \frac{12\sqrt{3} \cdot
+                                    10}{2}$$
+                                </div>
+
+                                <div>
+                                    $$P = \frac{144 \cdot 3\sqrt{3}}{4} + 180\sqrt{3}$$
+                                </div>
+
+                                <div>
+                                    $$P = 108\sqrt{3} + 180\sqrt{3}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$P = 288\sqrt{3}\,\text{cm}^2$$
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                        <div style="padding-top: 4px;">
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                8</div>
+                        </div>
+                        <div>Bočna ivica pravilne trostrane piramide dužine \( 4\sqrt{3} \, \text{cm} \) obrazuje sa
+                            ravni osnove ugao od \( 60^\circ \). Izračunaj površinu te piramide.</div>
+                    </div>
+                    <div class="questionArea" style="display: flex; flex-direction: column;">
+                        <img src="../../Assets/piramida/TrostranaPiramidaZadatak2.png" alt="Slika zadatka" width="100%">
+
+                        <div
+                            style="width: 100%; display: flex; flex-direction: row; gap: 70px; justify-content: center; align-items: center; text-align: center;">
+                            <div>
+                                <div>
+                                    $$s = 4\sqrt{3}\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$s = 2r_{\text{o}}$$
+                                </div>
+
+                                <div>
+                                    $$r_{\text{o}} = \frac{s}{2}$$
+                                </div>
+
+                                <div>
+                                    $$r_{\text{o}} = 2\sqrt{3}\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$H = \frac{s\sqrt{3}}{2}$$
+                                </div>
+
+                                <div>
+                                    $$H = \frac{4\cdot 3}{2}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$H = 6\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$ro = \frac{a\sqrt{3}}{3}$$
+                                </div>
+
+                                <div>
+                                    $$2\sqrt{3} = \frac{a\sqrt{3}}{3}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$a = 6\,\text{cm}$$
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    $$s^2 = h^2 + \left(\frac{a}{2}\right)^2$$
+                                </div>
+
+                                <div>
+                                    $$48 = h^2 + 9$$
+                                </div>
+
+                                <div>
+                                    $$h^2 = 39$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$h = \sqrt{39}\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$P = B + M$$
+                                </div>
+
+                                <div>
+                                    $$P = \frac{a^2\sqrt{3}}{4} + 3\cdot\frac{a \cdot h}{2}$$
+                                </div>
+
+                                <div>
+                                    $$P = \frac{36\sqrt{3}}{4} + 3 \cdot \frac{6\sqrt{39}}{2}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$P = 9\sqrt{3} + 9\sqrt{39}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$P = 9\sqrt{3} \cdot \left(1 + \sqrt{13}\right)\,\text{cm}^2$$
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 40px;">
+                        <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                        <ul style="padding-left: 20px;">
+                            <li><b>Površina baze:</b> \( B = \frac{a^2 \sqrt{3}}{4} \)</li>
+                            <li><b>Površina omotača:</b> \( M = 3 \cdot \frac{a \cdot h}{2} \)</li>
+                            <li><b>Ukupna površina:</b> \( P = B + M = \frac{a^2 \sqrt{3}}{4} + \frac{3ah}{2} \)</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Kolika je površina baze pravilne trostrane piramide sa ivicom a?',
+                options: ['a²', 'a²√3 / 4', '3a', 'a√3'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Apotema piramide je visina bočne strane (trougla).',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Kako se računa površina omotača trostrane piramide?',
+                options: ['M = 3aH', 'M = 3 · (a·h/2)', 'M = a²√3', 'M = O · H'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

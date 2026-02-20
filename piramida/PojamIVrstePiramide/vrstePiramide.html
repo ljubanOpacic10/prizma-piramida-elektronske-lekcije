@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Vrste piramide</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div class="lesson-objectives">
+                        <h3>🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul>
+                            <li>Razliku između prave i kose piramide</li>
+                            <li>Šta je pravilna piramida i koji su njeni uslovi</li>
+                            <li>Kako izgledaju pravilna trostrana, četvorostrana i šestostrana piramida</li>
+                            <li>Šta je tetraedar</li>
+                        </ul>
+                    </div>
+
+                    <!-- Prava vs Kosa piramida -->
+                    <div class="contentContainer">
+                        <h2>Prava i kosa piramida</h2>
+                        <div class="smallUnderline"></div>
+
+                        <div class="definition-box">
+                            <p><b>Prava piramida</b> je piramida kod koje podnožje visine (tačka u kojoj visina seče
+                                ravan osnove) pada u centar osnove.</p>
+                        </div>
+                        <p>Kod prave piramide, vrh \(S\) se nalazi tačno iznad centra osnove. Sve bočne ivice prave
+                            piramide su jednake dužine.</p>
+
+                        <div class="definition-box">
+                            <p><b>Kosa piramida</b> je piramida kod koje podnožje visine <b>ne pada</b> u centar osnove.
+                            </p>
+                        </div>
+                        <p>Kod kose piramide, vrh \(S\) nije iznad centra osnove, pa bočne ivice imaju različite dužine.
+                        </p>
+                    </div>
+
+                    <!-- Pravilna piramida -->
+                    <div class="contentContainer">
+                        <h2>Pravilna piramida</h2>
+                        <div class="smallUnderline"></div>
+
+                        <div class="definition-box">
+                            <p><b>Pravilna piramida</b> je prava piramida čija je osnova <b>pravilan mnogougao</b> (svi
+                                uglovi i sve stranice osnove su jednaki).</p>
+                        </div>
+                        <p>Pravilna piramida ima sledeće osobine:</p>
+                        <ul>
+                            <li>Osnova je pravilan mnogougao (jednakostraničan trougao, kvadrat, pravilni šestougao...)
+                            </li>
+                            <li>Sve bočne strane su <b>jednakokrake trouglove</b></li>
+                            <li>Sve bočne ivice su <b>jednake dužine</b></li>
+                            <li>Visina pada u centar opisane kružnice oko baze</li>
+                        </ul>
+
+                        <h3 style="margin-top: 40px;">Broj elemenata n-tostrane piramide</h3>
+                        <table class="elements-table">
+                            <tr>
+                                <th>Element</th>
+                                <th>Formula</th>
+                                <th>Trostrana (n=3)</th>
+                                <th>Četvrost. (n=4)</th>
+                                <th>Šestost. (n=6)</th>
+                            </tr>
+                            <tr>
+                                <td>Temena</td>
+                                <td>\(n + 1\)</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Ivice</td>
+                                <td>\(2n\)</td>
+                                <td>6</td>
+                                <td>8</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Strane</td>
+                                <td>\(n + 1\)</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>7</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="fun-fact">
+                        <h4>💡 Da li si znao?</h4>
+                        <p>Staklena piramida ispred Luvra u Parizu je pravilna četvorostrana piramida! Njen arhitekta
+                            I.M. Pej ju je projektovao 1989. godine. Ima 673 staklena panela i visoka je 21,6 metara.
+                        </p>
+                    </div>
+
+                    <!-- Tipovi pravilnih piramida sa 3D modelima -->
+                    <div class="contentContainer">
+                        <h2>Tipovi pravilnih piramida</h2>
+                        <div class="smallUnderline"></div>
+
+                        <h3 style="margin-top: 30px;">△ Pravilna trostrana piramida</h3>
+                        <p>Osnova je <b>jednakostraničan trougao</b>. Ima 4 temena, 6 ivica i 4 strane.</p>
+                        <p>Ako su i sve bočne strane jednakostranični trouglovi (jednaki osnovi), takva piramida se
+                            naziva <b>tetraedar</b> — pravilno telo sa 4 jednake strane.</p>
+                        <p class="shadowText"
+                            style="margin: auto; margin-bottom: 20px; font-weight: bold; color: darkslateblue;">Pravilna
+                            trostrana piramida</p>
+                        <iframe src="https://www.geogebra.org/3d/he9jbqam?embed" width="100%" height="600"
+                            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px; margin-bottom: 30px;"
+                            frameborder="0"></iframe>
+
+                        <h3 style="margin-top: 30px;">▢ Pravilna četvorostrana piramida</h3>
+                        <p>Osnova je <b>kvadrat</b>. Ima 5 temena, 8 ivica i 5 strana. Ovo je najčešći oblik piramide —
+                            upravo ovako izgledaju piramide u Egiptu!</p>
+                        <p class="shadowText"
+                            style="margin: auto; margin-bottom: 20px; font-weight: bold; color: darkslateblue;">Pravilna
+                            četvorostrana piramida</p>
+                        <iframe src="https://www.geogebra.org/3d/gxgcngmf?embed" width="100%" height="600"
+                            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px; margin-bottom: 30px;"
+                            frameborder="0"></iframe>
+
+                        <h3 style="margin-top: 30px;">⬢ Pravilna šestostrana piramida</h3>
+                        <p>Osnova je <b>pravilni šestougao</b>. Ima 7 temena, 12 ivica i 7 strana. Šestostrana piramida
+                            ima najviše elemenata od tri pravilne piramide koje učimo.</p>
+                        <p class="shadowText"
+                            style="margin: auto; margin-bottom: 20px; font-weight: bold; color: darkslateblue;">Pravilna
+                            šestostrana piramida</p>
+                        <iframe src="https://www.geogebra.org/3d/vj3ufhkh?embed" width="100%" height="600"
+                            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px; margin-bottom: 30px;"
+                            frameborder="0"></iframe>
+
+                    </div>
+
+                    <div class="lesson-summary">
+                        <h3>📝 Rezime lekcije</h3>
+                        <ul>
+                            <li><b>Prava piramida</b> — visina pada u centar osnove; <b>kosa piramida</b> — visina ne
+                                pada u centar.</li>
+                            <li><b>Pravilna piramida</b> = prava piramida + osnova je pravilan mnogougao.</li>
+                            <li><b>Tetraedar</b> je pravilna trostrana piramida kod koje su sve četiri strane
+                                jednakostranični trouglovi.</li>
+                            <li>Broj elemenata n-tostrane piramide: \(n+1\) temena, \(2n\) ivica, \(n+1\) strana.</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koja piramida ima osnovu koja je pravilan mnogougao i čija visina pada u centar osnove?',
+                options: ['Prava piramida', 'Kosa piramida', 'Pravilna piramida', 'Nepravilna piramida'],
+                correct: 2
+            },
+            {
+                type: 'true-false',
+                question: 'Tetraedar je piramida kojoj su sve četiri strane jednakostranični trouglovi.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Šta razlikuje pravu od kose piramide?',
+                options: ['Broj strana', 'Oblik osnove', 'Položaj podnožja visine', 'Broj ivica'],
+                correct: 2
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

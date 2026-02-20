@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prizma i piramida – Elektronske lekcije</title>
+    <script src="components.js"></script>
+
+    <style>
+        .shadowText {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: fit-content;
+            padding: 10px 20px;
+        }
+
+        .intro-section {
+            margin-bottom: 40px;
+        }
+
+        .intro-section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .intro-section p {
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .section-card {
+            background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-left: 4px solid rgb(106, 84, 247);
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-card h3 {
+            color: rgb(106, 84, 247);
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+
+        .section-card ul {
+            margin: 8px 0 0 20px;
+            color: #555;
+        }
+
+        .section-card ul li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+
+        .welcome-banner {
+            background: linear-gradient(135deg, rgb(106, 84, 247), #8b5cf6);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .welcome-banner h2 {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .welcome-banner p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+
+        .two-columns {
+            display: flex;
+            gap: 25px;
+        }
+
+        .two-columns>div {
+            flex: 1;
+        }
+
+        .start-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 20px;
+            background-color: rgb(106, 84, 247);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .start-link:hover {
+            background-color: #7c3aed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+                    <h1>Dobrodošli!</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div class="welcome-banner">
+                        <h2>Elektronske lekcije iz geometrije</h2>
+                        <p>Ove interaktivne lekcije pomoći će ti da razumeš prostorne geometrijske figure — prizmu i
+                            piramidu. Kroz 3D modele, korak-po-korak objašnjenja, formule i rešene zadatke, naučićeš sve
+                            što ti je potrebno!</p>
+                    </div>
+
+                    <div class="two-columns">
+                        <div>
+                            <div class="section-card">
+                                <h3>🔷 Prizma</h3>
+                                <p>Prizma je geometrijsko telo koje nastaje kada se mnogougao (osnova) "provuče" kroz
+                                    prostor duž pravca koji nije u ravni osnove.</p>
+                                <ul>
+                                    <li><b>Pojam i vrste prizme</b> — šta je prizma, prava i kosa prizma, pravilna i
+                                        jednakoivična prizma</li>
+                                    <li><b>Dijagonale i preseci</b> — dijagonale osnove, bočnih strana i prostorne
+                                        dijagonale</li>
+                                    <li><b>Crtanje prizme</b> — korak po korak kako nacrtati prizmu</li>
+                                    <li><b>Površina i zapremina</b> — formule za izračunavanje P i V sa rešenim zadacima
+                                    </li>
+                                    <li><b>Pravilne prizme</b> — trostrana, četvorostrana i šestostrana prizma sa
+                                        detaljnim primerima</li>
+                                    <li><b>Mreža prizme</b> — razvoj prizme u ravan i veza sa površinom</li>
+                                    <li><b>Osobine prizme</b> — Ojlerova formula, simetrija, preseci</li>
+                                    <li><b>Primena u životu</b> — gde srećemo prizme u svakodnevnom okruženju</li>
+                                </ul>
+                                <a href="prizma/PojamIVrstePrizme/pojamOsnovniEl.html" class="start-link">Započni
+                                    lekciju o prizmi →</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="section-card">
+                                <h3>🔺 Piramida</h3>
+                                <p>Piramida je geometrijsko telo koje nastaje kada se sva temena osnove (mnogougla)
+                                    spoje sa jednom tačkom izvan ravni osnove — vrhom piramide.</p>
+                                <ul>
+                                    <li><b>Pojam i vrste piramide</b> — šta je piramida, prava piramida, pravilna
+                                        piramida</li>
+                                    <li><b>Karakteristični preseci</b> — preseci ravni sa piramidom (paralelni,
+                                        normalni, kosi)</li>
+                                    <li><b>Teorema o tri normale</b> — važna teorema o odnosu normala iz temena piramide
+                                    </li>
+                                    <li><b>Crtanje piramide</b> — korak po korak kako nacrtati piramidu</li>
+                                    <li><b>Površina i zapremina</b> — formule za izračunavanje P i V sa rešenim zadacima
+                                    </li>
+                                    <li><b>Pravilne piramide</b> — trostrana, četvorostrana i šestostrana piramida</li>
+                                    <li><b>Mreža piramide</b> — razvoj piramide u ravan i poređenje sa prizmom</li>
+                                    <li><b>Osobine piramide</b> — Ojlerova formula, odnos visine i apoteme</li>
+                                    <li><b>Primena u životu</b> — piramide u arhitekturi i inženjerstvu</li>
+                                    <li><b>Zarubljena piramida</b> — pojam, osobine, formule za zapreminu i površinu
+                                    </li>
+                                </ul>
+                                <a href="piramida/PojamIVrstePiramide/pojamOsnovniEl.html" class="start-link">Započni
+                                    lekciju o piramidi →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="intro-section" style="margin-top: 15px;">
+                        <h2>Šta ćeš naučiti?</h2>
+                        <p>Ove elektronske lekcije pokrivaju gradivo iz prostorne geometrije za osnovu školu. Kroz
+                            interaktivne 3D modele (GeoGebra), vizuelna objašnjenja i rešene zadatke, naučićeš:</p>
+                        <ul style="line-height: 1.8; color: #555;">
+                            <li>Šta su prizma i piramida i kako ih prepoznati u prostoru</li>
+                            <li>Koje su vrste prizmi i piramida i po čemu se razlikuju</li>
+                            <li>Kako korak po korak nacrtati ove prostorne figure</li>
+                            <li>Kako izračunati površinu i zapreminu za različite tipove prizmi i piramida</li>
+                            <li>Kako primeniti formule na konkretnim zadacima sa rešenjima</li>
+                            <li>Šta je mreža geometrijskog tela i kako se koristi u praksi</li>
+                            <li>Ojlerovu formulu i osobine konveksnih poliedara</li>
+                            <li>Kako prepoznati prizme i piramide u svakodnevnom životu</li>
+                            <li>Šta je zarubljena piramida i gde se primenjuje</li>
+                        </ul>
+                    </div>
+
+                    <div class="shadowText" style="margin: auto; text-align: center; padding: 15px 30px;">
+                        <p style="margin: 0;">Izaberi temu iz menija sa leve strane ili klikni na jedno od dugmadi iznad
+                            da počneš!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

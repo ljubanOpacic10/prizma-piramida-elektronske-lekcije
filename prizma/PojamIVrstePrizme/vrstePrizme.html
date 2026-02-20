@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Vrste prizme</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Koja je razlika između prave i kose prizme</li>
+                            <li>Šta je jednakoivična (ravnostrana) prizma</li>
+                            <li>Šta je pravilna prizma i koji su njeni specijalni slučajevi</li>
+                            <li>Šta su kocka i kvadar</li>
+                        </ul>
+                    </div>
+
+                    <div class="contentContainer">
+                        <!-- <h4 class="smallHeading">Prava prizma</h4> -->
+
+                        <h2>Prava prizma</h2>
+                        <div class="smallUnderline"></div>
+                        <p class="shadowText"><span style="color: rgb(106, 84, 247); font-weight: bold;">Prava
+                                prizma</span> je prizma čije su bočne ivice normalne na ravan osnove</p>
+                        <p>To znači da su sve bočne stranice prave prizme pravougaoni oblici, jer su ivice koje povezuju
+                            tačke na osnovama pod uglom od 90 stepeni u odnosu na ravan osnove.</p>
+                        <p>Zbog ove osobine, bočne strane prave prizme formiraju pravilne pravougaonike ili kvadrate, u
+                            zavisnosti od oblika osnove.</p>
+                        <div class="shadowText" style="margin: auto;">Bočna ivica = visina prizme</div>
+                        <p><b>Prava prizma</b> je <b>pravilna</b> ako je njena osnova pravilan mnogougao.</p>
+                        <p>Pogledaj primer prave prizme <span class="geogebra"
+                                onclick="toggleIframe('iframe7')">(ovde)</span></p>
+                        <div id="iframe7" class="iframe-container">
+                            <iframe src="https://www.geogebra.org/3d/xzxqxp4c?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="contentContainer">
+                        <!-- <h4 class="smallHeading">Kosa prizma</h4> -->
+
+                        <h2>Kosa prizma</h2>
+                        <div class="smallUnderline"></div>
+                        <p class="shadowText"><span style="color: rgb(106, 84, 247); font-weight: bold;">Kosa prizma
+                            </span>je prizma kod koje bočne ivice nisu normalne na osnovu, pa su bočne strane
+                            paralelogrami.</p>
+                        <p>Kod kosih prizmi, visina prizme nije jednaka dužini bočnih ivica</p>
+                        <p class="shadowText" style="margin: auto;">Bočna ivica ≠ visina prizme</p>
+                        <p>isina se u ovom slučaju meri kao najkraća udaljenost između dve osnove. Zbog ove
+                            karakteristike, kosa prizma deluje nagnuto ili iskošeno u prostoru.</p>
+                        <p>Pogledaj sledece primere kosih prizmi:</p>
+                        <ul>
+                            <li>Kosa trostrana prizma: <span class="geogebra"
+                                    onclick="toggleIframe('iframe4')">(ovde)</span></li>
+                            <div id="iframe4" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/cffdbebr?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                            <li>Kosa četvorostrana prizma: <span class="geogebra"
+                                    onclick="toggleIframe('iframe5')">(ovde)</span></li>
+                            <div id="iframe5" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/nfbavmfu?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                            <li>Kosa šestostrana prizma: <span class="geogebra"
+                                    onclick="toggleIframe('iframe6')">(ovde)</span></li>
+                            <div id="iframe6" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/qzcygecc?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="contentContainer">
+                        <!-- <h4 class="smallHeading">Jednakoivična prizma</h4> -->
+
+                        <h2>Jednakoivična prizma</h2>
+                        <div class="smallUnderline"></div>
+                        <p class="shadowText"><span style="color: rgb(106, 84, 247); font-weight: bold;">Jednakoivična
+                                prizma</span> je prizma kod koje su sve ivice jednake.</p>
+                        <p>Ova prizma ima vrlo simetričnu strukturu, gde se sve stranice i bočne ivice podudaraju po
+                            dužini.</p>
+                        <p>Ova vrsta prizme ima posebno jednostavna svojstva kada su u pitanju geometrijski proračuni,
+                            jer zbog simetrije olakšava izračunavanje zapremine, površine, i drugih mera.</p>
+                        <p>Pogledaj sledece primere jednakoivičnih prizmi:</p>
+                        <ul>
+                            <li>Jednakoivičnih trostrana prizma: <span class="geogebra"
+                                    onclick="toggleIframe('iframe1')">(ovde)</span></li>
+                            <div id="iframe1" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/qvdhzmv8?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                            <li>Jednakoivičnih četvorostrana prizma: <span class="geogebra"
+                                    onclick="toggleIframe('iframe2')">(ovde)</span></li>
+                            <div id="iframe2" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/qpjyahby?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                            <li>Jednakoivičnih šestostrana prizma: <span class="geogebra"
+                                    onclick="toggleIframe('iframe3')">(ovde)</span></li>
+                            <div id="iframe3" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/b8t4ty3j?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="contentContainer">
+                        <!-- <h4 class="smallHeading">Jednakoivična prizma</h4> -->
+
+                        <h2>Pravilna prizma</h2>
+                        <div class="smallUnderline"></div>
+                        <p class="shadowText"><span style="color: rgb(106, 84, 247); font-weight: bold;">Pravilna
+                                prizma</span> je prizma kod koje je osnova pravilan mnogougao, a bočne ivice su jednake.
+                        </p>
+                        <p>Na primer, ako je osnova pravilna prizma kvadrat, sve četiri stranice kvadrata su jednake
+                            dužine, a uglovi između njih su pravi (90 stepeni).</p>
+                        <p>Pogledaj sledece primere pravilnih prizmi:</p>
+                        <ul>
+                            <li>Pravilna trostrana prizma (osnova pravilan trougao): <span class="geogebra"
+                                    onclick="toggleIframe('iframe8')">(ovde)</span></li>
+                            <div id="iframe8" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/n47beryv?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                            <li>Pravilna četvorostrana prizma (osnova pravilan četvorougao - kvadrat): <span
+                                    class="geogebra" onclick="toggleIframe('iframe9')">(ovde)</span></li>
+                            <div id="iframe9" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/eeu9x4ss?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                            <li>Pravilna šestostrana prizma (osnova pravilan šestougao): <span class="geogebra"
+                                    onclick="toggleIframe('iframe10')">(ovde)</span></li>
+                            <div id="iframe10" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/shbpezzq?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </ul>
+                    </div>
+
+
+
+                    <div
+                        style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-left: 4px solid #ff9800; border-radius: 8px; padding: 15px 20px; margin-top: 30px;">
+                        <h3 style="color: #e65100; margin-bottom: 8px; font-size: 1.1em;">🤔 Da li si znao?</h3>
+                        <p>Pčelinje saće je napravljeno od <b>pravilnih šestostranih prizmi</b>! Pčele su otkrile da je
+                            šestougaoni oblik najefikasniji za skladištenje meda — koristi najmanje voska za najveći
+                            mogući prostor.</p>
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 30px;">
+                        <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                        <ul style="padding-left: 20px;">
+                            <li><b>Prava prizma:</b> Bočne ivice su normalne na osnovu, bočne strane su pravougaonici.
+                            </li>
+                            <li><b>Kosa prizma:</b> Bočne ivice nisu normalne na osnovu, bočne strane su paralelogrami.
+                            </li>
+                            <li><b>Pravilna prizma:</b> Prava prizma čija je osnova pravilan mnogougao.</li>
+                            <li><b>Kocka:</b> Pravilna četvorostrana prizma kojoj su sve ivice jednake (a = H).</li>
+                            <li><b>Kvadar:</b> Pravougli paralelopiped — sve strane su pravougaonici.</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koja prizma ima sve bočne strane u obliku pravougaonika?',
+                options: ['Kosa prizma', 'Pravilna prizma', 'Prava prizma', 'Nepravilna prizma'],
+                correct: 2
+            },
+            {
+                type: 'true-false',
+                question: 'Kocka je pravilna četvorostrana prizma kojoj su sve ivice jednake.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Šta razlikuje pravu od kose prizme?',
+                options: ['Broj temena', 'Oblik osnove', 'Položaj bočnih ivica u odnosu na osnovu', 'Broj bočnih strana'],
+                correct: 2
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

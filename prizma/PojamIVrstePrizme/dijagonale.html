@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Dijagonale i dijagonalni preseci</h1>
+                    <div class="headingUnderline"></div>
+
+
+                    <div class="contentContainer">
+                        <h2>Dijagonale prizme</h2>
+
+                        <p class="shadowText"><span style="color: rgb(106, 84, 247); font-weight: bold;">Dijagonale u
+                                prizmi</span> su linije koje povezuju temena prizme koja nisu susedna.</p>
+                        <p>Dijagonale se razlikuju u zavisnosti od vrste prizme i oblika njene osnove.</p>
+                    </div>
+
+
+                    <div class="contentContainer">
+                        <p class="shadowText"><span style="color: orange; font-weight: bold;">Dijagonala osnove</span>
+                            je linija koja povezuje dva nesusedna temena osnovnog poligona prizme.</p>
+                        <p><b>Na primer:</b></p>
+                        <p>U pravilnoj četvorostranoj prizmi (kocka), dijagonala osnove je linija koja povezuje dva
+                            temena kvadrata koja nisu povezana stranom kvadrata. </p>
+                        <p>Dijagonala <b>osnove</b> pravilne četvorostrane prizme:</p>
+                        <p class="shadowText" style="margin: auto;">\( d = a \sqrt{2} \)</p>
+                        <p>Ako je osnova pravilni šestougao, dijagonale osnove povezuju temena šestougla koja nisu
+                            neposredno povezana stranom.</p>
+                        <p>Pogledaj kako izgleda <b>dijagonala osnove (obe dijagonale i gordnje i donje baze) pravilne
+                                četvorostrane prizme </b><span class="geogebra"
+                                onclick="toggleIframe('iframe1')">(ovde)</span></p>
+                        <div id="iframe1" class="iframe-container">
+                            <iframe src="https://www.geogebra.org/3d/dcu6jmkz?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="contentContainer">
+                        <p class="shadowText"><span style="color: orange; font-weight: bold;">Dijagonala bočne
+                                strane</span> je linija koja povezuje dva nesusedna temena bočne strane prizme.</p>
+                        <p><b>Na primer:</b></p>
+                        <p>U pravilnoj četvorostranoj prizmi (kocka), dijagonala bočne strane je linija koja povezuje
+                            temena pravougaonika (bočne strane) koja nisu povezana stranom. U ovom slučaju, to bi bila
+                            linija koja povezuje dva suprotna temena pravougaonika. </p>
+                        <p>Dijagonala <b>bočne strane</b> pravilne četvorostrane prizme:</p>
+                        <p class="shadowText" style="margin: auto;">
+                            $$ d = \sqrt{a^2 + H^2} $$
+                        </p>
+                        <p>Pogledaj kako izgledaju <b>dijagonale bočnih strana pravilne četvorostrane prizme</b> <span
+                                class="geogebra" onclick="toggleIframe('iframe2')">(ovde)</span></p>
+                        <div id="iframe2" class="iframe-container">
+                            <iframe src="https://www.geogebra.org/3d/dts9txtg?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="contentContainer">
+                        <p class="shadowText"><span style="color: orange; font-weight: bold;">Dijagonala prizme</span>
+                            je linija koja povezuje dva nesusedna temena različitih osnova (baza) prizme, prolazeći kroz
+                            unutrašnjost prizme.</p>
+                        <p><b>Na primer:</b></p>
+                        <p>U pravilnoj četvorostranoj prizmi (kocka), dijagonala prizme je linija koja povezuje temena
+                            iz različitih kvadrata, prolazeći kroz unutrašnjost kocke. </p>
+                        <p>Dijagonala pravilne četvorostrane prizme:</p>
+                        <p class="shadowText" style="margin: auto;">
+                            $$ D = \sqrt{d^2 + H^2} $$
+                        </p>
+                        <p>Pogledaj kako izgleda <b>dijagonala pravilne četvorostrane prizme</b> <span class="geogebra"
+                                onclick="toggleIframe('iframe3')">(ovde)</span></p>
+                        <div id="iframe3" class="iframe-container">
+                            <iframe src="https://www.geogebra.org/3d/rbjwgs2h?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+                    <h2>Zadaci:</h2>
+                    <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                        <div style="padding-top: 4px;">
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                1</div>
+                        </div>
+                        <div>
+                            Izračunati dužinu osnovne ivice pravilne četvorostrane prizme, ako je njena visina \(12 \,
+                            \text{cm}\), a dijagonala prizme \(13 \, \text{cm}\).
+                        </div>
+                    </div>
+
+                    <div class="questionArea" style="display: flex; gap: 40px;">
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="../../Assets/Zadatak2.png" alt="Slika Zadatka 1" width="fit-content"
+                                height="250px">
+                        </div>
+                        <div
+                            style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+                            <div style="border-bottom: 1px solid orange;">
+                                $$D = 13\,\text{cm}, \quad H = 12\,\text{cm}, \quad a = ?$$
+                            </div>
+
+                            <div>
+                                $$D^2 = H^2 + d^2$$
+                            </div>
+
+                            <div>
+                                $$13^2 = 12^2 + d^2$$
+                            </div>
+
+                            <div>
+                                $$169 = 144 + d^2$$
+                            </div>
+
+                            <div>
+                                $$d^2 = 25$$
+                            </div>
+
+                            <div>
+                                $$d = 5\,\text{cm}$$
+                            </div>
+
+                            <div>
+                                $$d = a\sqrt{2}$$
+                            </div>
+
+                            <div>
+                                $$a = \frac{d}{\sqrt{2}} = \frac{5}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}$$
+                            </div>
+
+                            <div style="border-bottom: 1px solid orange;">
+                                $$a = \frac{5\sqrt{2}}{2}\,\text{cm}$$
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="contentContainer">
+                        <h2>Dijagonalni preseci prizme</h2>
+
+                        <p class="shadowText"><span style="color: rgb(106, 84, 247); font-weight: bold;">Dijagonalni
+                                presek prizme</span> se dobija kada se prizma preseče ravnom površinom koja prolazi kroz
+                            dijagonale njenih osnovnih poligona. Drugim rečima, to je presečna površina koja se dobija
+                            kada se prizma iseče tako da ravna površina prolazi kroz dve dijagonale osnovnog poligona.
+                        </p>
+                        <p>Dijagonale se razlikuju u zavisnosti od vrste prizme i oblika njene osnove.</p>
+
+                        <div style="margin-top: 50px;">
+                            <p class="shadowText" style="margin: auto;">$$ P_d = a \sqrt{2} H $$</p>
+                            <p style="text-align: center;">Površina dijagonalnog preseka - Pravilna četvorostrana prizma
+                                <span class="geogebra" onclick="toggleIframe('iframe5')">(Pogledaj)</span>
+                            </p>
+                            <div id="iframe5" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/wpvhwhyp?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 50px;">
+                            <p class="shadowText" style="margin: auto;">$$ P_d = a^2 \sqrt{2} $$</p>
+                            <p style="text-align: center;">Površina dijagonalnog preseka - Pravilni heksaedar (kocka)
+                                <span class="geogebra" onclick="toggleIframe('iframe4')">(Pogledaj)</span>
+                            </p>
+                            <div id="iframe4" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/mwfx6tjz?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 50px;">
+                            <p class="shadowText" style="margin: auto;">$$ P_d = c \sqrt{a^2 + b^2} $$</p>
+                            <p style="text-align: center;">Površina dijagonalnog preseka - Pravougli heksaedar (kvadar)
+                                <span class="geogebra" onclick="toggleIframe('iframe6')">(Pogledaj)</span>
+                            </p>
+                            <div id="iframe6" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/dhpeattp?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+
+                        <p class="shadowText" style="margin-top: 50px;">Treba obratiti pažnju na dijagonalne preseke
+                            pravilne šestostrane prizme.</p>
+                        <div style="margin-top: 50px;">
+                            <p class="shadowText" style="margin: auto;">
+                                $$ P_d = d_2 H = 2 a H $$
+                            </p>
+                            <p style="text-align: center;">Veliki dijagonalni presek</p>
+                            <p style="text-align: center;"><span class="geogebra"
+                                    onclick="toggleIframe('iframe7')">(Pogledaj)</span></p>
+                            <div id="iframe7" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/jrxsvvxt?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div style="margin-top: 50px;">
+                            <p class="shadowText" style="margin: auto;">
+                                $$ P_d = d_1 H = 2 h_2 = a \sqrt{3} H $$
+                            </p>
+                            <p style="text-align: center;">Mali dijagonalni presek</p>
+                            <p style="text-align: center;"><span class="geogebra"
+                                    onclick="toggleIframe('iframe8')">(Pogledaj)</span></p>
+                            <div id="iframe8" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/a5p9m9k3?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+                        <h2>Zadaci:</h2>
+                        <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                            <div style="padding-top: 4px;">
+                                <div
+                                    style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                    1</div>
+                            </div>
+                            <div>Površina kraćeg dijagonalnog preseka pravilne šestostrane prizme je
+                                \( 72 \sqrt{3} \, \text{cm}^2 \). Izračunaj zapreminu te prizme, ako je dužina stranica
+                                osnove te prizme
+                                \( 12 \, \text{cm} \).</div>
+                        </div>
+                        <div class="questionArea" style="display: flex;">
+                            <img src="../../Assets/Zadatak1.png" alt="Slika Zadatka 1" width="50%" height="250px">
+                            <div
+                                style="width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                                <div>
+                                    $$a = 12\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$P_{\text{d.j. preseka}} = 72 \sqrt{3} \,\text{cm}^2$$
+                                </div>
+
+                                <div>
+                                    $$a \sqrt{3} \cdot H = 72 \sqrt{3}$$
+                                </div>
+
+                                <div>
+                                    $$a \cdot H = 72$$
+                                </div>
+
+                                <div>
+                                    $$H = \frac{72}{a}$$
+                                </div>
+
+                                <div>
+                                    $$H = \frac{72}{12}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$H = 6\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$V = B \cdot H$$
+                                </div>
+
+                                <div>
+                                    $$V = \frac{a^2 \sqrt{3}}{4} \cdot H$$
+                                </div>
+
+                                <div>
+                                    $$V = \frac{12^2 \sqrt{3}}{4} \cdot 6$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$V = 216 \sqrt{3} \,\text{cm}^3$$
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div
+                            style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-left: 4px solid #ff9800; border-radius: 8px; padding: 15px 20px; margin-top: 30px;">
+                            <h3 style="color: #e65100; margin-bottom: 8px; font-size: 1.1em;">🤔 Da li si znao?</h3>
+                            <p>Dijagonala kocke sa ivicom <b>a</b> iznosi \( D = a\sqrt{3} \). Ako je ivica kocke 1 cm,
+                                njena prostorna dijagonala je približno <b>1,73 cm</b> — to znači da je dijagonala duža
+                                od bilo koje ivice!</p>
+                        </div>
+
+                        <div
+                            style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 30px;">
+                            <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                            <ul style="padding-left: 20px;">
+                                <li><b>Dijagonala osnove</b> (četvorostrana prizma): \( d = a\sqrt{2} \)</li>
+                                <li><b>Dijagonala bočne strane:</b> \( d_b = \sqrt{a^2 + H^2} \)</li>
+                                <li><b>Dijagonala prizme:</b> \( D = \sqrt{d^2 + H^2} \)</li>
+                                <li><b>Dijagonalni presek</b> je površina koja nastaje kada se prizma preseče ravni koja
+                                    prolazi kroz dijagonale osnova.</li>
+                            </ul>
+                        </div>
+
+                        <div id="lesson-quiz"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../quiz.js"></script>
+        <script>
+            initQuiz('lesson-quiz', [
+                {
+                    type: 'multiple-choice',
+                    question: 'Koja dijagonala spaja dva temena koja ne pripadaju istoj strani prizme?',
+                    options: ['Dijagonala osnove', 'Dijagonala bočne strane', 'Dijagonala prizme', 'Dijagonala preseka'],
+                    correct: 2
+                },
+                {
+                    type: 'true-false',
+                    question: 'Dijagonalni presek pravilne četvorostrane prizme je uvek pravougaonik.',
+                    correct: 0
+                },
+                {
+                    type: 'multiple-choice',
+                    question: 'Koliko dijagonala osnove ima pravilna šestostrana prizma?',
+                    options: ['3', '6', '9', '12'],
+                    correct: 2
+                }
+            ]);
+        </script>
+        <script src="../../script.js"></script>
+</body>
+
+</html>

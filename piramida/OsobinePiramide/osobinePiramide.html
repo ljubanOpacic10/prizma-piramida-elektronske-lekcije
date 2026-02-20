@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Osobine piramide – Prizma i Piramida</title>
+    <script src="../../components.js"></script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <div class="menu" id="app-menu"></div>
+
+            <div class="lecture">
+                <div class="lectureContainer">
+                    <h1>Osobine piramide</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div class="lesson-objectives">
+                        <h3>📋 Ciljevi lekcije</h3>
+                        <ul>
+                            <li>Upoznati se sa osobinama pravilne piramide</li>
+                            <li>Naučiti i primeniti Ojlerovu formulu na piramide</li>
+                            <li>Razumeti odnose između visine, apoteme i bočne ivice</li>
+                            <li>Analizirati preseke piramide ravni</li>
+                        </ul>
+                    </div>
+
+                    <!-- Osnovne osobine -->
+                    <div class="contentContainer">
+                        <h2>Osnovne osobine piramide</h2>
+
+                        <p>Piramida je geometrijsko telo kod kojeg je osnova poligon, a bočne strane su trouglovi koji
+                            se sastaju u jednoj tački — <b>vrhu piramide</b>.</p>
+
+                        <ul>
+                            <li><b>Jednu osnovu</b> — pravilni poligon (kod pravilne piramide)</li>
+                            <li><b>Bočne strane su trouglovi</b> — kod pravilne piramide su jednakokraki</li>
+                            <li><b>Vrh piramide</b> — tačka u kojoj se sustiču sve bočne strane</li>
+                            <li><b>Visina</b> — normalno rastojanje od vrha do ravni osnove</li>
+                            <li>Nožište visine pravilne piramide je <b>centar osnove</b></li>
+                        </ul>
+                    </div>
+
+                    <!-- Elementi piramide - tabela -->
+                    <div class="contentContainer">
+                        <h2>Elementi piramide sa \( n \)-stranom osnovom</h2>
+
+                        <table class="property-table">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Formula</th>
+                                    <th>Trostrana (n=3)</th>
+                                    <th>Četvorostrana (n=4)</th>
+                                    <th>Šestostrana (n=6)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Temena (V)</b></td>
+                                    <td>\( n + 1 \)</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Ivice (I)</b></td>
+                                    <td>\( 2n \)</td>
+                                    <td>6</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Strane (S)</b></td>
+                                    <td>\( n + 1 \)</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Bočne strane</b></td>
+                                    <td>\( n \)</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Bočne ivice</b></td>
+                                    <td>\( n \)</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Ivice osnove</b></td>
+                                    <td>\( n \)</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Ojlerova formula -->
+                    <div class="contentContainer">
+                        <h2>Ojlerova formula za piramide</h2>
+
+                        <div class="formula-box">
+                            <h4>⭐ Ojlerova formula</h4>
+                            <p>$$ V - I + S = 2 $$</p>
+                        </div>
+
+                        <h3>Provera za piramide</h3>
+
+                        <p><b>Trostrana piramida (tetraedar):</b> \( V = 4, \, I = 6, \, S = 4 \)</p>
+                        <p>$$ 4 - 6 + 4 = 2 \checkmark $$</p>
+
+                        <p><b>Četvorostrana piramida:</b> \( V = 5, \, I = 8, \, S = 5 \)</p>
+                        <p>$$ 5 - 8 + 5 = 2 \checkmark $$</p>
+
+                        <p><b>Šestostrana piramida:</b> \( V = 7, \, I = 12, \, S = 7 \)</p>
+                        <p>$$ 7 - 12 + 7 = 2 \checkmark $$</p>
+
+                        <p><b>Opšta \( n \)-strana piramida:</b></p>
+                        <p>$$ (n+1) - 2n + (n+1) = n + 1 - 2n + n + 1 = 2 \checkmark $$</p>
+                    </div>
+
+                    <!-- Visina, apotema, bočna ivica -->
+                    <div class="contentContainer">
+                        <h2>Odnos visine, apoteme i bočne ivice</h2>
+
+                        <p>U pravilnoj piramidi postoje tri važne mere:</p>
+
+                        <ul>
+                            <li><b>Visina \( H \)</b> — udaljenost od vrha do centra osnove (normalana na osnovu)</li>
+                            <li><b>Apotema piramide \( h_b \)</b> — visina bočne strane (od vrha do sredine ivice
+                                osnove)</li>
+                            <li><b>Bočna ivica \( l \)</b> — ivica od vrha do temena osnove</li>
+                        </ul>
+
+                        <div class="formula-box">
+                            <h4>📐 Pitagorina teorema u piramidi</h4>
+                            <p>Za pravilnu \( n \)-stranu piramidu:</p>
+                            <p>$$ l^2 = H^2 + R^2 $$</p>
+                            <p>$$ h_b^2 = H^2 + r^2 $$</p>
+                            <p>gde je \( R \) — poluprečnik opisanog kruga osnove, \( r \) — poluprečnik upisanog kruga
+                                osnove</p>
+                        </div>
+
+                        <h3>Za pravilnu četvorostranu piramidu (stranica osnove \( a \))</h3>
+                        <p>Poluprečnik opisanog kruga: \( R = \frac{a\sqrt{2}}{2} \)</p>
+                        <p>Poluprečnik upisanog kruga (apotema osnove): \( r = \frac{a}{2} \)</p>
+                        <p><b>Bočna ivica:</b> $$ l = \sqrt{H^2 + \frac{a^2}{2}} $$</p>
+                        <p><b>Apotema piramide:</b> $$ h_b = \sqrt{H^2 + \frac{a^2}{4}} $$</p>
+                    </div>
+
+                    <!-- Preseci piramide -->
+                    <div class="contentContainer">
+                        <h2>Preseci piramide ravni</h2>
+
+                        <div class="real-world-example">
+                            <h4>📐 Presek paralelan osnovi</h4>
+                            <p>Daje figuru <b>sličnu osnovi</b>, ali manju. Ako ravan seče na visini \( h \) od osnove
+                                (ukupna visina je \( H \)), onda je koeficijent sličnosti \( k = \frac{H - h}{H} \), a
+                                stranica preseka je \( a' = a \cdot k \).</p>
+                        </div>
+
+                        <div class="real-world-example">
+                            <h4>📐 Aksijalni presek</h4>
+                            <p>Ravan koja prolazi kroz vrh i dve nasuprotne ivice osnove daje <b>trougao</b>. Kod
+                                pravilne četvorostrane piramide, aksijalni presek je jednakokraki trougao sa osnovicom
+                                \( a\sqrt{2} \) (dijagonala osnove) i kracima jednakim bočnoj ivici.</p>
+                        </div>
+
+                        <div class="real-world-example">
+                            <h4>✂️ Zarubljena piramida</h4>
+                            <p>Ako presečemo piramidu ravni paralelnom osnovi, nastaje <b>zarubljena piramida</b>
+                                (frustum) — telo sa dve paralelne osnove različitih veličina.</p>
+                        </div>
+                    </div>
+
+                    <!-- Piramida vs Prizma -->
+                    <div class="contentContainer">
+                        <h2>Piramida u poređenju sa prizmom</h2>
+
+                        <table class="property-table">
+                            <thead>
+                                <tr>
+                                    <th>Osobina</th>
+                                    <th>Prizma (\(n\)-strana)</th>
+                                    <th>Piramida (\(n\)-strana)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Osnove</td>
+                                    <td>2 paralelne</td>
+                                    <td>1 + vrh</td>
+                                </tr>
+                                <tr>
+                                    <td>Temena</td>
+                                    <td>\( 2n \)</td>
+                                    <td>\( n + 1 \)</td>
+                                </tr>
+                                <tr>
+                                    <td>Ivice</td>
+                                    <td>\( 3n \)</td>
+                                    <td>\( 2n \)</td>
+                                </tr>
+                                <tr>
+                                    <td>Strane</td>
+                                    <td>\( n + 2 \)</td>
+                                    <td>\( n + 1 \)</td>
+                                </tr>
+                                <tr>
+                                    <td>Bočne strane</td>
+                                    <td>Pravougaonici</td>
+                                    <td>Trouglovi</td>
+                                </tr>
+                                <tr>
+                                    <td>Zapremina</td>
+                                    <td>\( V = B \cdot H \)</td>
+                                    <td>\( V = \frac{1}{3} B \cdot H \)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="fun-fact">
+                            <h4>💡 Zanimljivo!</h4>
+                            <p>Zapremina piramide je tačno <b>trećina</b> zapremine prizme sa istom osnovom i istom
+                                visinom! To znači da u jednu prizmu staju tačno tri piramide.</p>
+                        </div>
+                    </div>
+
+                    <!-- Rešeni zadaci -->
+                    <div class="contentContainer">
+                        <h2>Rešeni zadaci</h2>
+
+                        <div class="task-card">
+                            <h4>Zadatak 1: Ojlerova formula</h4>
+                            <p>Piramida ima 12 ivica. Koliko ima temena i strana? Koja je to piramida?</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Iz \( I = 2n \) nalazimo:</b></p>
+                                <p>$$ 2n = 12 \Rightarrow n = 6 $$</p>
+                                <p><b>Temena:</b> \( V = n + 1 = 7 \)</p>
+                                <p><b>Strane:</b> \( S = n + 1 = 7 \)</p>
+                                <p><b>Provera:</b> \( 7 - 12 + 7 = 2 \checkmark \)</p>
+                                <p><b>Odgovor:</b> To je <b>šestostrana piramida</b> sa 7 temena i 7 strana.</p>
+                            </div>
+                        </div>
+
+                        <div class="task-card">
+                            <h4>Zadatak 2: Bočna ivica</h4>
+                            <p>Pravilna četvorostrana piramida ima stranicu osnove \( a = 6 \) cm i visinu \( H = 4 \)
+                                cm. Izračunaj dužinu bočne ivice.</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Poluprečnik opisanog kruga osnove:</b></p>
+                                <p>$$ R = \frac{a\sqrt{2}}{2} = \frac{6\sqrt{2}}{2} = 3\sqrt{2} $$</p>
+                                <p><b>Bočna ivica (Pitagorina teorema):</b></p>
+                                <p>$$ l = \sqrt{H^2 + R^2} = \sqrt{16 + 18} = \sqrt{34} \approx 5.83 \text{ cm} $$</p>
+                                <p><b>Odgovor:</b> Bočna ivica je \( \sqrt{34} \approx 5.83 \) cm.</p>
+                            </div>
+                        </div>
+
+                        <div class="task-card">
+                            <h4>Zadatak 3: Apotema piramide</h4>
+                            <p>Pravilna četvorostrana piramida ima stranicu osnove \( a = 10 \) cm i bočnu ivicu \( l =
+                                13 \) cm. Izračunaj visinu i apotemu piramide.</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Visina (Pitagorina teorema sa \( R \)):</b></p>
+                                <p>$$ R = \frac{a\sqrt{2}}{2} = \frac{10\sqrt{2}}{2} = 5\sqrt{2} $$</p>
+                                <p>$$ H = \sqrt{l^2 - R^2} = \sqrt{169 - 50} = \sqrt{119} \approx 10.91 \text{ cm} $$
+                                </p>
+                                <p><b>Apotema piramide (sa \( r = \frac{a}{2} = 5 \)):</b></p>
+                                <p>$$ h_b = \sqrt{H^2 + r^2} = \sqrt{119 + 25} = \sqrt{144} = 12 \text{ cm} $$</p>
+                                <p><b>Odgovor:</b> Visina je \( \sqrt{119} \approx 10.91 \) cm, apotema je <b>12 cm</b>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lesson-summary">
+                        <h3>📝 Rezime lekcije</h3>
+                        <ul>
+                            <li>Piramida sa \( n \)-stranom osnovom ima \( n+1 \) temena, \( 2n \) ivica i \( n+1 \)
+                                strana</li>
+                            <li>Ojlerova formula važi i za piramide: \( V - I + S = 2 \)</li>
+                            <li>Visina, apotema i bočna ivica su povezane Pitagorinom teoremom</li>
+                            <li>Zapremina piramide je \( \frac{1}{3} \) zapremine prizme sa istom osnovom i visinom</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koliko temena ima piramida sa osmougaonom osnovom?',
+                options: ['8', '9', '16', '10'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Zapremina piramide je trećina zapremine prizme sa istom osnovom i visinom.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Nožište visine pravilne piramide se nalazi u:',
+                options: ['Temenu osnove', 'Centru osnove', 'Sredini bočne ivice', 'Na ivici osnove'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

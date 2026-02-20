@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+
+    <style>
+        .contentContainer {
+            margin-bottom: 60px;
+        }
+
+        .shadowText {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: fit-content;
+            padding: 10px 20px;
+            /* margin: auto; */
+        }
+
+        .lesson-objectives {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            border-left: 4px solid #4caf50;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+        }
+
+        .lesson-objectives h3 {
+            color: #2e7d32;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .lesson-objectives ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .lesson-objectives ul li {
+            margin-bottom: 4px;
+            color: #333;
+        }
+
+        .fun-fact {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border-left: 4px solid #ff9800;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin: 30px 0;
+        }
+
+        .fun-fact h4 {
+            color: #e65100;
+            margin-bottom: 6px;
+        }
+
+        .fun-fact p {
+            color: #333;
+            margin: 0;
+        }
+
+        .lesson-summary {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border-left: 4px solid #1976d2;
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-top: 40px;
+        }
+
+        .lesson-summary h3 {
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+
+        .lesson-summary ul {
+            padding-left: 20px;
+        }
+
+        .lesson-summary ul li {
+            margin-bottom: 5px;
+            color: #333;
+        }
+    </style>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../components.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+                    <h1>Pojam i osnovni elementi piramide</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div class="lesson-objectives">
+                        <h3>🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul>
+                            <li>Šta je piramida i kako nastaje</li>
+                            <li>Koji su delovi piramide (osnova, bočne strane, omotač)</li>
+                            <li>Koji su osnovni elementi piramide (temena, ivice, visina, apotema)</li>
+                            <li>Razliku između prave i kose piramide</li>
+                        </ul>
+                    </div>
+
+                    <p class="shadowText">Telo ograničeno datim mnogouglom i trouglovima koje obrazuju njegove stranice
+                        sa uočenom sa uočenom tačkom \(S\) naziva se <b style="color: orange;">piramida</b>.</li>
+                    <ul>
+                        <li>Mnogougao je <b>osnova (baza piramide)</b>, a svaki trougao koji obrazuje stranica mnogougla
+                            sa tačkom \(S\) naziva se <b>bočna strana piramide</b>.</li>
+                        <li>Tacka \(S\) se naziva se <b>vrh piramide</b>.</p>
+                        <li>Piramida cija je osnova n-tougao naziva se <b>n-tostrana piramida</b></li>
+                    </ul>
+
+                    <div id="iframe1" class="iframe-container">
+                        <iframe src="https://www.geogebra.org/3d/eaekuwks?embed" width="100%" height="600"
+                            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                            frameborder="0"></iframe>
+                    </div>
+
+                    <div class="fun-fact">
+                        <h4>💡 Da li si znao?</h4>
+                        <p>Keopsova piramida u Gizi, jedna od sedam svetskih čuda starog sveta, visoka je čak 146
+                            metara! Bila je najviša građevina na svetu skoro 4000 godina. Njena baza je skoro savršen
+                            kvadrat sa stranicom od 230 metara.</p>
+                    </div>
+
+                    <h3 style="margin-top: 50px;">Delovi piramide</h3>
+                    <ol>
+                        <li><span class="geogebra" onclick="toggleIframe('iframe2')">Osnova (Baza): </span> </li>
+                        <div id="iframe2" class="iframe-container">
+                            <iframe src="https://www.geogebra.org/3d/wkj8haqv?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+
+                        <li><span class="geogebra" onclick="toggleIframe('iframe3')">Bočne Strane:</span> (trouglovi
+                            ABS, BCS, CDS, ADS)</li>
+                        <div id="iframe3" class="iframe-container">
+                            <iframe src="https://www.geogebra.org/3d/pxedcmjv?embed" width="100%" height="600"
+                                allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                frameborder="0"></iframe>
+                        </div>
+
+                        <p>\( (\triangle ABS \cup \triangle BCS \cup \triangle CDS \cup \triangle ADS) \) - omotač
+                            piramide</p>
+                    </ol>
+
+                    <h3 style="margin-top: 50px;">Osnovni elementi piramide</h3>
+                    <ul>
+                        <li>
+                            <h4>Temena \(A, B, C, D\) <span class="geogebra" onclick="toggleIframe('iframe4')">Pogledaj
+                                    temena</span></h4>
+                            <div id="iframe4" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/daqzjxpk?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto;">Temena su prikaza crvenom bojom</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h4>Ivice piramide</h4>
+                            <p>Stranice osnove se nazivaju <span class="geogebra"
+                                    onclick="toggleIframe('iframe5')">osnovnim ivicama piramide</span>.</p>
+                            <div id="iframe5" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/xvjwrwbk?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                $$ (AB, BC, CD, DA) $$
+                            </div>
+                            <p>Ivice koje spajaju vrh piramide i temena se nazivaju <span class="geogebra"
+                                    onclick="toggleIframe('iframe15')">bočne ivice piramide</span></p>
+                            <div id="iframe15" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/rpk9vyd7?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                $$ (AS, BS, CS, DS) $$
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <h4>Visina piramide \( H \)</h4>
+                            <p>Duž čiji krajevi pripadaju ravnima osnova piramide i koja je normalna na ravni osnova
+                                naziva se visina piramide.</p>
+                            <span class="geogebra" onclick="toggleIframe('iframe7')">(Pogledaj kako izgleda visina
+                                piramide)</span>.
+
+                            <div id="iframe7" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/xmzk5md5?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto;">Visina piramide je prikazana crvenom linijom
+                                </p>
+                            </div>
+
+                            <p>Ako podnožje visine piramide predstavlja centar kružnice opisane oko baze, za takvu
+                                piramidu kažemo da je prava.</p>
+
+                        </li>
+
+                        <li>
+                            <h4>Visina bočne strane (apotema) \( h \) - samo kod pravilne piramide</h4>
+                            <p>Duž koja spaja sredinu osnovne ivice i vrh piramide.</p>
+                            <span class="geogebra" onclick="toggleIframe('iframe8')">(Pogledaj kako izgleda
+                                apotema)</span>.
+
+                            <div id="iframe8" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/jnkbhukq?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                                <p class="shadowText" style="margin: auto;">Apotema piramide je prikazana kao visina
+                                    bočne strane (trougla)</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="lesson-summary">
+                        <h3>📝 Rezime lekcije</h3>
+                        <ul>
+                            <li><b>Piramida</b> je telo ograničeno mnogouglom (bazom) i trouglovima (bočnim stranama)
+                                koji se spajaju u vrhu \(S\).</li>
+                            <li><b>Delovi:</b> osnova (baza), bočne strane (trouglovi), omotač (unija svih bočnih
+                                strana).</li>
+                            <li><b>Osnovni elementi:</b> temena, osnovne ivice, bočne ivice, visina \(H\), apotema
+                                \(h\).</li>
+                            <li><b>n-tostrana piramida</b> ima: \(n+1\) temena, \(2n\) ivica, \(n+1\) strana (1 osnova +
+                                \(n\) bočnih).</li>
+                            <li><b>Prava piramida:</b> podnožje visine je centar kružnice opisane oko baze.</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koliko temena ima četvorostrana piramida?',
+                options: ['4', '5', '6', '8'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Sve bočne strane piramide su trouglovi.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Koliko ivica ima trostrana piramida (tetraedar)?',
+                options: ['4', '6', '8', '12'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

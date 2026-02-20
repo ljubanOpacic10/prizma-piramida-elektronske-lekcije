@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Kako se crta pravilna šestostrana piramida</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Kako korak po korak nacrtati pravilnu šestostranu piramidu</li>
+                            <li>Kako nacrtati pravilni šestougao i pronaći njegov centar</li>
+                            <li>Kako nacrtati visinu i bočne ivice piramide</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contentContainer">
+                        <h2>Koraci za crtanje pravilne šestostrane piramide:</h2>
+
+                        <div class="shadowText drawStep"
+                            style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 20px; cursor: pointer;">
+                            <div class="numberInList">1</div>
+                            Nacrtaj osnovu
+                            <img src="../../arrowDown.png" width=20px height=20px style="margin-left: 20px;">
+                        </div>
+                        <div class="listItem" style="display:none;">
+                            <iframe scrolling="no"
+                                src="https://www.geogebra.org/material/iframe/id/jqyh3es2/width/1600/height/715/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/false"
+                                width="100%" height="340px" style="border:0px;" allowfullscreen>
+                            </iframe>
+                        </div>
+
+
+
+                        <div class="shadowText drawStep"
+                            style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 20px; cursor: pointer;">
+                            <div class="numberInList">2</div>
+                            Podeli osnovu (nacrtaj duže dijagonale) da bi se dobilo podnožje visine
+                            <img src="../../arrowDown.png" width=20px height=20px style="margin-left: 20px;">
+                        </div>
+                        <div class="listItem" style="display:none;">
+                            <iframe scrolling="no"
+                                src="https://www.geogebra.org/material/iframe/id/vcfczzcf/width/1600/height/715/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/false"
+                                width="100%" height="340px" style="border:0px;" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="shadowText drawStep"
+                            style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 20px; cursor: pointer;">
+                            <div class="numberInList">3</div>
+                            Nacrtaj visinu piramide
+                            <img src="../../arrowDown.png" width=20px height=20px style="margin-left: 20px;">
+                        </div>
+                        <div class="listItem" style="display:none;">
+                            <iframe scrolling="no"
+                                src="https://www.geogebra.org/material/iframe/id/fwnjx2bj/width/1600/height/715/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/false"
+                                width="100%" height="340px" style="border:0px;" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="shadowText drawStep"
+                            style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 20px; cursor: pointer;">
+                            <div class="numberInList">4</div>
+                            Nacrtaj bočne ivice spajanjem temena i vrha piramide
+                            <img src="../../arrowDown.png" width=20px height=20px style="margin-left: 20px;">
+                        </div>
+                        <div class="listItem" style="display:none;">
+                            <iframe scrolling="no"
+                                src="https://www.geogebra.org/material/iframe/id/ahrsqjzz/width/1600/height/715/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/false"
+                                width="100%" height="340px" style="border:0px;" allowfullscreen>
+                            </iframe>
+                        </div>
+
+
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 40px;">
+                        <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                        <ul style="padding-left: 20px;">
+                            <li><b>Korak 1:</b> Nacrtaj osnovu — pravilni šestougao.</li>
+                            <li><b>Korak 2:</b> Nacrtaj duže dijagonale da pronađeš centar osnove.</li>
+                            <li><b>Korak 3:</b> Nacrtaj visinu piramide iz centra osnove.</li>
+                            <li><b>Korak 4:</b> Spoj vrh sa temenima osnove bočnim ivicama.</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koliko temena ima pravilna šestostrana piramida?',
+                options: ['6', '7', '12', '13'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Pravilna šestostrana piramida ima 12 ivica.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Koliko bočnih strana (trouglova) ima šestostrana piramida?',
+                options: ['3', '4', '6', '8'],
+                correct: 2
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

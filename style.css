@@ -1,0 +1,657 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    padding: 10px 90px;
+    width: 100%;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(40, 33, 85);
+}
+
+.headerTitle {
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.navButtonsContainer {
+    display: flex;
+    gap: 10px;
+
+}
+
+.navButton {
+    width: 100px;
+    padding: 7px 0px;
+    color: white;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.navButton:hover {
+    background-color: rgb(40, 33, 85);
+    transition: background-color 0.5s ease;
+}
+
+.activeButton {
+    background-color: white;
+    color: black;
+}
+
+.activeButton:hover {
+    background-color: rgb(163, 163, 163);
+    color: black;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+.menu {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dropbtn {
+    position: relative;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 20px;
+    /* border-radius: 30px; */
+    background-color: transparent;
+    border-top: 1px solid rgb(185, 185, 185);
+
+}
+
+.decorLine {
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background-color: darkslateblue;
+    right: 0;
+    opacity: 0;
+    /* Hide by default */
+    transition: opacity 0.3s ease;
+}
+
+.dropbtn:hover .decorLine {
+    opacity: 1;
+}
+
+.active .decorLine {
+    opacity: 1;
+}
+
+
+
+.rotate {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease;
+}
+
+.dropdown {
+    width: 270px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    /* Move the dropdown content down */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+.lecture {
+    width: 70%;
+    padding: 120px 50px;
+    line-height: 1.6;
+}
+
+.geogebra {
+    color: rgb(106, 84, 247);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.geogebra:hover {
+    color: darkblue;
+}
+
+.iframe-container {
+    display: none;
+    margin-top: 10px;
+}
+
+.lectureContainer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding: 20px 50px;
+    padding-bottom: 70px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.headingUnderline {
+    width: 0;
+    height: 3px;
+    background-color: #6a54f7;
+    /* Match the color */
+    margin: 0 auto;
+    transition: width 1s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.headingUnderline.expand {
+    width: 100%;
+    /* Expand to full width */
+}
+
+.smallHeading {
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 20px;
+    color: white;
+    width: fit-content;
+}
+
+.smallUnderline {
+    width: 100%;
+    height: 3px;
+    background-color: orange;
+}
+
+
+
+
+
+
+.questionArea {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+/* ===== Quiz Styles ===== */
+.quiz-section {
+    background: linear-gradient(135deg, #ede7f6, #d1c4e9);
+    border-left: 4px solid darkslateblue;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-top: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.quiz-title {
+    color: darkslateblue;
+    margin: 0 0 20px 0;
+    font-size: 1.2em;
+}
+
+.quiz-question {
+    background: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-question-text {
+    margin: 0 0 12px 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9em;
+}
+
+.quiz-option:hover {
+    border-color: #7c4dff;
+    background-color: #f3f0ff;
+}
+
+.quiz-option input[type="radio"] {
+    accent-color: darkslateblue;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.quiz-option.correct {
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+    color: #2e7d32;
+}
+
+.quiz-option.incorrect {
+    background-color: #ffebee;
+    border-color: #f44336;
+    color: #c62828;
+}
+
+.quiz-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quiz-btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.95em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.quiz-btn-check {
+    background: linear-gradient(135deg, darkslateblue, #7c4dff);
+    color: white;
+}
+
+.quiz-btn-check:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(72, 61, 139, 0.4);
+}
+
+.quiz-btn-retry {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: white;
+}
+
+.quiz-btn-retry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+}
+
+.quiz-result {
+    text-align: center;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 1.1em;
+    background: white;
+    border-radius: 8px;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-6px);
+    }
+
+    40% {
+        transform: translateX(6px);
+    }
+
+    60% {
+        transform: translateX(-4px);
+    }
+
+    80% {
+        transform: translateX(4px);
+    }
+}
+
+/* ===== Footer Styles ===== */
+.app-footer {
+    background: linear-gradient(135deg, #2d1b69, #483d8b);
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding: 0;
+}
+
+.footer-content {
+    display: flex;
+    gap: 40px;
+    padding: 40px 60px 30px;
+    flex-wrap: wrap;
+}
+
+.footer-content>div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-brand h3 {
+    color: white;
+    margin: 0 0 12px 0;
+    font-size: 1.15em;
+}
+
+.footer-brand p {
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+.footer-links h4,
+.footer-info h4 {
+    color: white;
+    margin: 0 0 12px 0;
+    font-size: 0.95em;
+}
+
+.footer-links a {
+    display: block;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+.footer-info p {
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding: 18px 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.85em;
+}
+
+/* ===== LESSON COMPONENTS ===== */
+
+/* Ciljevi lekcije */
+.lesson-objectives {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    border-left: 4px solid #4caf50;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin: 25px 0;
+}
+
+.lesson-objectives h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.lesson-objectives ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.lesson-objectives ul li {
+    margin-bottom: 4px;
+    color: #333;
+}
+
+/* Zanimljivost */
+.fun-fact {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    border-left: 4px solid #ff9800;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 30px 0;
+}
+
+.fun-fact h4 {
+    color: #e65100;
+    margin-bottom: 6px;
+}
+
+.fun-fact p {
+    color: #333;
+    margin: 0;
+}
+
+/* Rezime lekcije */
+.lesson-summary {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border-left: 4px solid #1976d2;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-top: 40px;
+}
+
+.lesson-summary h3 {
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+.lesson-summary ul {
+    padding-left: 20px;
+}
+
+.lesson-summary ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Primeri iz prakse */
+.real-world-example {
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    border-left: 4px solid #9c27b0;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 15px 0;
+}
+
+.real-world-example h4 {
+    color: #6a1b9a;
+    margin-bottom: 6px;
+}
+
+.real-world-example p {
+    color: #333;
+    margin: 4px 0;
+}
+
+/* Kartice za zadatke */
+.task-card {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin: 20px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s;
+}
+
+.task-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+}
+
+.task-card h4 {
+    color: #37474f;
+    margin-bottom: 8px;
+}
+
+/* Dugme za prikaz rešenja */
+.solution-toggle {
+    background: linear-gradient(135deg, #5c6bc0, #3949ab);
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95em;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.solution-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(57, 73, 171, 0.4);
+}
+
+/* Skriveno rešenje */
+.solution-content {
+    display: none;
+    background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-top: 14px;
+    border-left: 4px solid #3f51b5;
+}
+
+.solution-content.show {
+    display: block;
+}
+
+/* Net/Mreza diagram container */
+.net-diagram {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.net-diagram svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Property table */
+.property-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.property-table th {
+    background: linear-gradient(135deg, #5c6bc0, #3949ab);
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.property-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+}
+
+.property-table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.property-table tr:hover {
+    background-color: #e8eaf6;
+}
+
+/* Formula highlight box */
+.formula-box {
+    background: linear-gradient(135deg, #ede7f6, #d1c4e9);
+    border: 2px solid #7e57c2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.formula-box h4 {
+    color: #4527a0;
+    margin-bottom: 10px;
+}

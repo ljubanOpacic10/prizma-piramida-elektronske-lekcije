@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+                    <h1>Karakteristični preseci piramide</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div class="lesson-objectives">
+                        <h3>🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul>
+                            <li>Kako izgleda presek piramide ravni koja je paralelna osnovi</li>
+                            <li>Kako izgleda presek piramide ravni koja je normalna na osnovu</li>
+                            <li>Šta je kos presek piramide</li>
+                            <li>Značaj preseka za razumevanje prostornih oblika</li>
+                        </ul>
+                    </div>
+
+                    <p>Preseci piramide ravnima su važan alat za razumevanje njene strukture. U zavisnosti od položaja
+                        ravni u odnosu na osnovu, dobijamo različite oblike preseka.</p>
+
+                    <h2 style="margin-top: 40px;">1. Presek piramide i ravni paralelne osnovi</h2>
+                    <p class="shadowText" style="margin-bottom: 20px;">Presek piramide i ravni koja je paralelna bazi
+                        n-tostrane piramide je n-tostrani mnogougao koji je homotetičan n-tostranom mnogouglu u osnovi.
+                    </p>
+                    <p>To znači da je presek <b>sličan osnovi</b>, ali <b>manjih dimenzija</b>. Što je ravan bliže vrhu,
+                        presek je manji. Što je bliže osnovi, presek je veći i sličniji samoj osnovi.</p>
+                    <iframe src="https://www.geogebra.org/3d/gmm9vdmp?embed" width="100%" height="600" allowfullscreen
+                        style="border: 1px solid #e4e4e4;border-radius: 4px; margin-bottom: 70px;"
+                        frameborder="0"></iframe>
+
+                    <h2>2. Presek piramide i ravni normalne na osnovu</h2>
+                    <p class="shadowText" style="margin-bottom: 20px;">Ravan koja je normalna na ravan osnove piramide
+                        sa piramidom gradi normalan presek koji može biti tačka, duž, trougao, četvorougao…</p>
+                    <p>Oblik preseka zavisi od tačnog položaja ravni. Ako ravan prolazi kroz vrh piramide, presek je
+                        <b>trougao</b>. Ako ne prolazi kroz vrh, presek može biti četvorougao ili drugi oblik.
+                    </p>
+                    <iframe src="https://www.geogebra.org/3d/yy62mtun?embed" width="100%" height="600" allowfullscreen
+                        style="border: 1px solid #e4e4e4;border-radius: 4px; margin-bottom: 70px;"
+                        frameborder="0"></iframe>
+
+                    <div class="fun-fact">
+                        <h4>💡 Da li si znao?</h4>
+                        <p>Mnogi minerali u prirodi imaju oblik piramida! Kristali kvarca često formiraju šestostrane
+                            piramide. Preseci ovih kristala se koriste u geologiji za identifikaciju minerala.</p>
+                    </div>
+
+                    <h2>3. Presek piramide i ravni koja nije ni paralelna ni normalna na osnovu</h2>
+                    <p class="shadowText" style="margin-bottom: 20px;">Ravan koja nije normalna ni paralelna ravni
+                        osnove piramide sa piramidom ima kos presek.</p>
+                    <p>Kosi presek daje oblike koji nisu pravilni — mogu biti različiti četvorouglovi, trouglovi ili
+                        petouglovi, u zavisnosti od nagiba ravni i oblika piramide.</p>
+                    <iframe src="https://www.geogebra.org/3d/bnuzyher?embed" width="100%" height="600" allowfullscreen
+                        style="border: 1px solid #e4e4e4;border-radius: 4px; margin-bottom: 70px;"
+                        frameborder="0"></iframe>
+
+                    <div class="lesson-summary">
+                        <h3>📝 Rezime lekcije</h3>
+                        <ul>
+                            <li><b>Paralelan presek</b> daje mnogougao sličan osnovi, ali manjih dimenzija.</li>
+                            <li><b>Normalan presek</b> može biti tačka, duž, trougao ili četvorougao.</li>
+                            <li><b>Kos presek</b> daje nepravilne oblike koji zavise od položaja ravni.</li>
+                            <li>Preseci nam pomažu da bolje razumemo unutrašnju strukturu piramide.</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Kakav oblik ima presek piramide ravni koja je paralelna osnovi?',
+                options: ['Trougao', 'Krug', 'Mnogougao sličan osnovi', 'Pravougaonik'],
+                correct: 2
+            },
+            {
+                type: 'true-false',
+                question: 'Presek piramide ravni koja je paralelna osnovi je uvek manji od same osnove.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Normalan presek piramide ravni koja prolazi kroz vrh daje:',
+                options: ['Krug', 'Trougao', 'Pravougaonik', 'Šestougao'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

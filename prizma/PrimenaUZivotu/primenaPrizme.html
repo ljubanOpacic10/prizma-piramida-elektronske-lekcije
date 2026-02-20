@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Primena prizme u svakodnevnom životu – Prizma i Piramida</title>
+    <script src="../../components.js"></script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <div class="menu" id="app-menu"></div>
+
+            <div class="lecture">
+                <div class="lectureContainer">
+                    <h1>Primena prizme u svakodnevnom životu</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div class="lesson-objectives">
+                        <h3>📋 Ciljevi lekcije</h3>
+                        <ul>
+                            <li>Prepoznati oblike prizmi u svakodnevnom okruženju</li>
+                            <li>Primeniti formule za površinu i zapreminu na konkretne probleme</li>
+                            <li>Razviti sposobnost rešavanja praktičnih zadataka</li>
+                        </ul>
+                    </div>
+
+                    <div class="contentContainer">
+                        <h2>Prizme oko nas</h2>
+
+                        <p>Prizme su svuda oko nas! Mnogi objekti koje svakodnevno koristimo imaju oblik prizme.
+                            Prepoznavanje ovih oblika pomaže nam da primenimo geometriju u praksi.</p>
+
+                        <div class="real-world-example">
+                            <h4>📦 Kutija (pravougaona prizma)</h4>
+                            <p>Kutije za cipele, paketi, ormari — svi su oblika <b>pravougaone prizme</b> (kvadar). Kada
+                                merimo koliko stvari staje u kutiju, izračunavamo njenu <b>zapreminu</b>: \( V = a \cdot
+                                b \cdot c \).</p>
+                        </div>
+
+                        <div class="real-world-example">
+                            <h4>🏠 Krov kuće (trostrana prizma)</h4>
+                            <p>Mnogi krovovi imaju oblik <b>trostrane prizme</b>. Kada pokrivamo krov crepovima, treba
+                                nam površina omotača. Kada računamo zapreminu potkrovlja, koristimo formulu za zapreminu
+                                trostrane prizme.</p>
+                        </div>
+
+                        <div class="real-world-example">
+                            <h4>🐟 Akvarijum (pravougaona prizma)</h4>
+                            <p>Akvarijum je tipičan primer pravougaone prizme. Zapremina akvarijuma nam govori koliko
+                                litara vode staje: 1 dm³ = 1 litar.</p>
+                        </div>
+
+                        <div class="real-world-example">
+                            <h4>✏️ Olovka (šestostrana prizma)</h4>
+                            <p>Obična drvena olovka ima poprečni presek u obliku pravilnog šestougla — to je <b>pravilna
+                                    šestostrana prizma</b>!</p>
+                        </div>
+
+                        <div class="real-world-example">
+                            <h4>🍫 Toblerone čokolada (trostrana prizma)</h4>
+                            <p>Poznata Toblerone čokolada je spakirana u kutiju oblika <b>trostrane prizme</b>. Njena
+                                ambalaža je zapravo mreža trostrane prizme!</p>
+                        </div>
+                    </div>
+
+                    <!-- Rešeni zadaci -->
+                    <div class="contentContainer">
+                        <h2>Rešeni zadaci iz prakse</h2>
+
+                        <div class="task-card">
+                            <h4>Zadatak 1: Akvarijum</h4>
+                            <p>Akvarijum ima dimenzije: dužina \( a = 80 \) cm, širina \( b = 40 \) cm i visina \( c =
+                                50 \) cm. Koliko litara vode staje u akvarijum?</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Zapremina:</b></p>
+                                <p>$$ V = a \cdot b \cdot c = 80 \cdot 40 \cdot 50 = 160\,000 \text{ cm}^3 $$</p>
+                                <p><b>Pretvaramo u litre:</b></p>
+                                <p>$$ V = 160\,000 \text{ cm}^3 = 160 \text{ dm}^3 = 160 \text{ litara} $$</p>
+                                <p><b>Odgovor:</b> U akvarijum staje <b>160 litara</b> vode.</p>
+                            </div>
+                        </div>
+
+                        <div class="task-card">
+                            <h4>Zadatak 2: Farbanje sobe</h4>
+                            <p>Soba ima oblik pravougaone prizme sa dimenzijama poda \( a = 5 \) m i \( b = 4 \) m, i
+                                visinom \( c = 2.8 \) m. Koliko m² zidova treba ofarbati? (ne računaj pod i plafon)</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Površina zidova = površina omotača:</b></p>
+                                <p>$$ M = 2 \cdot (a + b) \cdot c = 2 \cdot (5 + 4) \cdot 2.8 = 2 \cdot 9 \cdot 2.8 =
+                                    50.4 \text{ m}^2 $$</p>
+                                <p><b>Odgovor:</b> Treba ofarbati <b>50.4 m²</b> zidova.</p>
+                            </div>
+                        </div>
+
+                        <div class="task-card">
+                            <h4>Zadatak 3: Toblerone pakovanje</h4>
+                            <p>Kutija za čokoladu ima oblik pravilne trostrane prizme sa stranicom osnove \( a = 4 \) cm
+                                i dužinom kutije \( H = 25 \) cm. Koliko kartona treba za jednu kutiju (ukupna
+                                površina)?</p>
+                            <button class="solution-toggle" onclick="toggleSolution(this)">🔎 Prikaži rešenje</button>
+                            <div class="solution-content">
+                                <p><b>Površina baze (jednakostr. trougao):</b></p>
+                                <p>$$ B = \frac{a^2\sqrt{3}}{4} = \frac{16\sqrt{3}}{4} = 4\sqrt{3} \approx 6.93 \text{
+                                    cm}^2 $$</p>
+                                <p><b>Površina omotača:</b></p>
+                                <p>$$ M = 3 \cdot a \cdot H = 3 \cdot 4 \cdot 25 = 300 \text{ cm}^2 $$</p>
+                                <p><b>Ukupna površina:</b></p>
+                                <p>$$ P = 2B + M = 2 \cdot 4\sqrt{3} + 300 = 8\sqrt{3} + 300 \approx 313.86 \text{ cm}^2
+                                    $$</p>
+                                <p><b>Odgovor:</b> Treba približno <b>314 cm²</b> kartona za jednu kutiju.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fun-fact">
+                        <h4>💡 Da li si znao?</h4>
+                        <p>Saće koje prave pčele se sastoji od pravilnih šestostranih prizmi! Pčele koriste ovaj oblik
+                            jer šestougao pokriva prostor bez praznina i koristi najmanje voska.</p>
+                    </div>
+
+                    <div class="lesson-summary">
+                        <h3>📝 Rezime lekcije</h3>
+                        <ul>
+                            <li>Prizme su prisutne u mnogim objektima: kutije, akvarijumi, krovovi, olovke</li>
+                            <li>Zapremina nam govori koliko nečeg staje (kapacitet posude)</li>
+                            <li>Površina nam govori koliko materijala treba (farbanje, pakovanje)</li>
+                            <li>1 dm³ = 1 litar (važna pretvorba!)</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Obična drvena olovka ima poprečni presek u obliku:',
+                options: ['Kruga', 'Kvadrata', 'Pravilnog šestougla', 'Trougla'],
+                correct: 2
+            },
+            {
+                type: 'true-false',
+                question: '1 dm³ je jednako 1 litru.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Za farbanje zidova sobe treba izračunati:',
+                options: ['Zapreminu sobe', 'Površinu omotača', 'Površinu osnove', 'Dijagonalu sobe'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

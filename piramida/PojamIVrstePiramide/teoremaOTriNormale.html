@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+                    <h1>Teorema o tri normale</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div class="lesson-objectives">
+                        <h3>🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul>
+                            <li>Šta kaže teorema o tri normale</li>
+                            <li>Kako se koristi veza između prave, ravni i normala</li>
+                            <li>Zašto je ova teorema važna za izračunavanje visine piramide</li>
+                        </ul>
+                    </div>
+
+                    <p>Teorema o tri normale je važan alat u stereometriji. Koristi se za dokazivanje da su određene
+                        prave normalne na ravni, što je ključno za izračunavanje visine piramide i drugih elemenata.</p>
+
+                    <h3 style="margin-top: 30px;">Korak 1: Prava prodire ravan</h3>
+                    <p class="shadowText">
+                        Neka prava \( p \) prodire ravan \( \alpha \) u tački \( C \).
+                    </p>
+                    <img src="../../Assets/piramida/Teorema1 (9).png" alt="Prava prodire ravan" width="100%"
+                        style="margin-bottom: 70px;">
+
+                    <h3>Korak 2: Podnožje normale</h3>
+                    <p class="shadowText">
+                        Neka je \( B \) podnožje normale iz tačke \( A \), koja pripada pravoj \( p \) na ravni \(
+                        \alpha \).
+
+                    </p>
+                    <img src="../../Assets/piramida/Teorema1 (4).png" alt="Podnožje normale" width="100%"
+                        style="margin-bottom: 70px;">
+
+                    <div class="fun-fact">
+                        <h4>💡 Da li si znao?</h4>
+                        <p>Teorema o tri normale ima praktičnu primenu u arhitekturi! Arhitekte je koriste da provere da
+                            li su zidovi zgrada zaista vertikalni (normalni) na pod. Isti princip važi i za piramidalne
+                            konstrukcije.</p>
+                    </div>
+
+                    <h3>Korak 3: Zaključak teoreme</h3>
+                    <p class="shadowText">
+                        Prava \( c \) ravni \( \alpha \), koja sadrži tačku \( C \), normalna je na \( BC \) ako i samo
+                        ako je normalna na \( AC \).
+                    </p>
+                    <img src="../../Assets/piramida/Teorema1 (7).png" alt="Zaključak teoreme" width="100%"
+                        style="margin-bottom: 70px;">
+
+                    <h3>Primena na piramidi</h3>
+                    <p class="shadowText">Zaključak: Teorema o tri normale govori o odnosu između tri normalne linije
+                        koje se izvode iz istog temena piramide ka ravnima koje sadrže bazu piramide.</p>
+                    <img src="../../Assets/piramida/Teorema1 (8).png" alt="Primena na piramidi" width="100%"
+                        style="margin-bottom: 70px;">
+
+                    <div class="lesson-summary">
+                        <h3>📝 Rezime lekcije</h3>
+                        <ul>
+                            <li><b>Teorema o tri normale</b> povezuje odnose između normala iz tačke na pravoj ka ravni.
+                            </li>
+                            <li>Ako je \( AB \perp \alpha \), onda svaka prava u ravni \( \alpha \) koja je normalna na
+                                \( BC \) je takođe normalna na \( AC \), i obrnuto.</li>
+                            <li>Ova teorema se koristi za <b>dokazivanje normalnosti</b> pravih na ravni i za
+                                <b>određivanje visine</b> piramide.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Teorema o tri normale se primenjuje na:',
+                options: ['Dve paralelne prave', 'Pravu normalnu na ravan i njenu projekciju', 'Tri paralelne ravni', 'Dva trougla'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Ako je AB normalna na ravan α, i BC leži u ravni α, tada je AC normalna na BC.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Za šta se teorema o tri normale najčešće koristi kod piramida?',
+                options: ['Za izračunavanje zapremine', 'Za određivanje visine i dokazivanje normalnosti', 'Za crtanje osnove', 'Za merenje ivica'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

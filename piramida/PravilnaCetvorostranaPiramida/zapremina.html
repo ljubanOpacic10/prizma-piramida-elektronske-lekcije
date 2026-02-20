@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Zapremina pravilne četvorostrane piramide</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Kako izračunati zapreminu pravilne četvorostrane piramide</li>
+                            <li>Kako primeniti formulu \( V = \frac{1}{3} \cdot a^2 \cdot H \) na konkretnim zadacima
+                            </li>
+                            <li>Kako iz datih podataka izračunati visinu piramide</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contentContainer">
+                        <h2>Kako se računa zapremina pravilne četvorostrane piramide</h2>
+
+                        <div class="contentContainer">
+                            <p class="shadowText"><span style="color: orange; font-weight: bold;">Zapremina pravilne
+                                    četvorostrane piramide</span> računa se kao trećina proizvoda površine baze i visine
+                                piramide.</p>
+
+                        </div>
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Površina baze (kvadrata koji predstavlja bazu)</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Osnova pravilne četvorostrane piramide je kvadrat. Površina kvadrata može se izračunati
+                                pomoću formule:</p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ B = a^2 $$
+                            </p>
+
+                            <p>\( a \) - dužina stranice kvadrata (baze).</p>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Ukupna zapremina piramide</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Zapremina pravilne četvorostrane piramide se računa:</p>
+
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ V = \frac{(B \cdot H)}{3} $$
+                            </p>
+                            <p>\( H \) - visina piramide</p>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="questionArea">
+                        <h2>Zadaci:</h2>
+                        <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                            <div style="padding-top: 4px;">
+                                <div
+                                    style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                    1</div>
+                            </div>
+                            <div>Najveća piramida na svetu je Keopsova piramida u Egiptu. Ona u osnovi ima kvadrat
+                                stranice dužine
+                                \( 230 \, \text{m} \), a sadašnja visina joj je približno \( 138 \, \text{m} \). Kolika
+                                je zapremina te piramide?</div>
+                        </div>
+                        <div class="questionArea" style="display: flex;">
+                            <img src="../../Assets/piramida/CetvorostranaPiramidaZadatak4.png" alt="Slika zadatka"
+                                width="40%">
+
+                            <div
+                                style="width: 60%; display: flex; flex-direction: row; gap: 70px; justify-content: center; align-items: center; text-align: center;">
+                                <div>
+                                    <div>
+                                        $$a = 230\,\text{m}$$
+                                    </div>
+
+                                    <div>
+                                        $$H = 138\,\text{m}$$
+                                    </div>
+
+                                    <div>
+                                        $$V = ?$$
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        $$V = B \cdot H$$
+                                    </div>
+
+                                    <div>
+                                        $$V = a^2 \cdot H$$
+                                    </div>
+
+                                    <div>
+                                        $$V = \frac{1}{3} \cdot 230^2 \cdot 138$$
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid orange;">
+                                        $$V = 2\,433\,400\,\text{m}^3$$
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                            <div style="padding-top: 4px;">
+                                <div
+                                    style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                    2</div>
+                            </div>
+                            <div>Mera ugla između bočne strane i ravni osnove pravilne četvorostrane piramide je \(
+                                60^\circ \). Ako je dužina apoteme
+                                \( 8 \, \text{cm} \), izračunaj zapreminu te piramide.</div>
+                        </div>
+                        <div class="questionArea" style="display: flex; flex-direction: column;">
+                            <img src="../../Assets/piramida/CetvorostranaPiramidaZadatak5.png" alt="Slika zadatka"
+                                width="100%">
+
+                            <div
+                                style="width: 100%; display: flex; flex-direction: row; gap: 70px; justify-content: center; align-items: center; text-align: center;">
+                                <div>
+                                    <div>
+                                        $$h = 8\,\text{cm}$$
+                                    </div>
+
+                                    <div>
+                                        $$V = ?$$
+                                    </div>
+
+                                    <div>
+                                        $$a = h = 8\,\text{cm}$$
+                                    </div>
+
+
+
+                                    <div>
+                                        $$H = \frac{h \sqrt{3}}{2}$$
+                                    </div>
+
+                                    <div>
+                                        $$H = \frac{8 \sqrt{3}}{2}$$
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid orange;">
+                                        $$H = 4 \sqrt{3} \, \text{cm}$$
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        $$V = \frac{1}{3} \cdot B \cdot H$$
+                                    </div>
+
+                                    <div>
+                                        $$V = \frac{1}{3} \cdot a^2 \cdot H$$
+                                    </div>
+
+                                    <div>
+                                        $$V = \frac{1}{3} \cdot 8^2 \cdot 4 \sqrt{3}$$
+                                    </div>
+
+                                    <div style="border-bottom: 1px solid orange;">
+                                        $$V = \frac{256 \sqrt{3}}{3} \, \text{cm}^3$$
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 40px;">
+                            <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                            <ul style="padding-left: 20px;">
+                                <li><b>Površina baze:</b> \( B = a^2 \)</li>
+                                <li><b>Zapremina:</b> \( V = \frac{1}{3} \cdot a^2 \cdot H \)</li>
+                                <li>Ključ je primena Pitagorine teoreme za određivanje visine ili stranice osnove iz
+                                    datih podataka.</li>
+                            </ul>
+                        </div>
+
+                        <div id="lesson-quiz"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../quiz.js"></script>
+        <script>
+            initQuiz('lesson-quiz', [
+                {
+                    type: 'multiple-choice',
+                    question: 'Koja je formula za zapreminu pravilne četvorostrane piramide?',
+                    options: ['V = a² · H', 'V = ⅓ · a² · H', 'V = 2a² + 4aH', 'V = a³'],
+                    correct: 1
+                },
+                {
+                    type: 'true-false',
+                    question: 'Pitagorina teorema se koristi za određivanje visine piramide iz bočne ivice.',
+                    correct: 0
+                },
+                {
+                    type: 'multiple-choice',
+                    question: 'Ako je a = 6 cm i H = 9 cm, kolika je zapremina ove piramide?',
+                    options: ['54 cm³', '108 cm³', '162 cm³', '324 cm³'],
+                    correct: 1
+                }
+            ]);
+        </script>
+        <script src="../../script.js"></script>
+</body>
+
+</html>

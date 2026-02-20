@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Zapremina pravilne šestostrane piramide</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Kako izračunati zapreminu pravilne šestostrane piramide</li>
+                            <li>Kako primeniti opštu formulu \( V = \frac{1}{3} \cdot B \cdot H \)</li>
+                            <li>Kako iz datih podataka izračunati stranicu osnove i visinu</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contentContainer">
+                        <h2>Kako se računa zapremina pravilne šestostrane piramide</h2>
+
+                        <div class="contentContainer">
+                            <p class="shadowText"><span style="color: orange; font-weight: bold;">Zapremina pravilne
+                                    šestostrane piramide</span> računa se kao trećina proizvoda površine osnove i visine
+                                piramide.</p>
+
+                        </div>
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Površina baze (pravilnog šestougla)</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Ako je
+                                𝑎
+                                a dužina stranice pravilnog šestougla, površina osnovnog šestougla je:</p>
+                            <p class="shadowText" style="font-size: medium; margin: auto; margin-bottom: 14px;">
+
+
+                                $$ B = 6 \cdot \left( \frac{a^2 \sqrt{3}}{4} \right) $$
+                            </p>
+                            <p>Kad se skrati: </p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+
+                                $$ B = 3 \cdot \frac{a^2\sqrt{3}}{2} $$
+
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Ukupna zapremina piramide</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Konačna formula za zapreminu pravilne šestostrane piramide:</p>
+
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ V = \frac{1}{3} \cdot B \cdot H $$
+
+
+                            </p>
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                        <div style="padding-top: 4px;">
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                1</div>
+                        </div>
+                        <div>Bocna ivica pravilne šestostrane piramide dužine \( 6\,\text{cm} \), obrazuje sa ravni
+                            osnove ugao od \( 30^\circ \). Odredi njenu zapreminu.</div>
+                    </div>
+                    <div class="questionArea" style="display: flex; flex-direction: column;">
+                        <img src="../../Assets/piramida/SestostranaZadatak4.png" alt="Slika zadatka" width="100%">
+
+                        <div
+                            style="width: 100%; display: flex; flex-direction: row; gap: 70px; justify-content: center; align-items: center; text-align: center;">
+                            <div>
+                                <div>
+                                    $$s = 6\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$s = 2H$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$H = \frac{s}{2} = 3\,\text{cm}$$
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    $$a = \frac{s \sqrt{3}}{2}$$
+                                </div>
+
+                                <div>
+                                    $$a = \frac{6 \sqrt{3}}{2}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$a = 3\sqrt{3}\,\text{cm}$$
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: center; align-items: center; text-align: center; gap: 70px;">
+                        <div>
+                            <div>
+                                $$V = \frac{1}{3} \cdot B \cdot H$$
+                            </div>
+
+                            <div>
+                                $$V = \frac{1}{3} \cdot 3 \cdot \left(\frac{(a^2) \sqrt{3}}{2}\right) \cdot H$$
+                            </div>
+
+                            <div>
+                                $$H = \left(\frac{(3 \sqrt{3})^2 \sqrt{3}}{2}\right) \cdot 3$$
+                            </div>
+
+                            <div>
+                                $$V = \frac{27\sqrt{3} \cdot 3}{2}$$
+                            </div>
+
+                            <div style="border-bottom: 1px solid orange;">
+                                $$V = \frac{81\sqrt{3}}{2}\,\text{cm}^3$$
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div
+                        style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 40px;">
+                        <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                        <ul style="padding-left: 20px;">
+                            <li><b>Površina baze:</b> \( B = 3 \cdot \frac{a^2 \sqrt{3}}{2} \)</li>
+                            <li><b>Zapremina:</b> \( V = \frac{1}{3} \cdot B \cdot H \)</li>
+                            <li>Ključ je izračunati stranicu osnove \( a \) i visinu \( H \) iz datih podataka koristeći
+                                Pitagorinu teoremu i trigonometriju.</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Koja je formula za zapreminu pravilne šestostrane piramide?',
+                options: ['V = (3√3/2) · a²·H', 'V = ⅓ · (3√3/2) · a² · H', 'V = 6a²H', 'V = a³'],
+                correct: 1
+            },
+            {
+                type: 'true-false',
+                question: 'Pravilna šestostrana piramida ima osnovu koja se sastoji od 6 jednakostraničnih trouglova.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Koliko ivica ima pravilna šestostrana piramida?',
+                options: ['6', '12', '18', '24'],
+                correct: 1
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

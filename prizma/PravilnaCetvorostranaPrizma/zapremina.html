@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Prizma i piramida</title>
+    <script src="../../components.js"></script>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="app-header"></div>
+
+        <div class="content">
+            <!-- Meni -->
+            <div class="menu" id="app-menu"></div>
+
+            <!-- Lekcija -->
+            <div class="lecture">
+                <div class="lectureContainer">
+
+                    <h1>Zapremina pravilne četvorostrane prizme</h1>
+                    <div class="headingUnderline"></div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 4px solid #4caf50; border-radius: 8px; padding: 15px 20px; margin-bottom: 30px;">
+                        <h3 style="color: #2e7d32; margin-bottom: 8px; font-size: 1.1em;">🎯 Ciljevi lekcije</h3>
+                        <p>Posle ove lekcije ćeš znati:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Formulu za zapreminu pravilne četvorostrane prizme</li>
+                            <li>Kako odrediti nepoznate veličine iz datih podataka</li>
+                            <li>Kako rešiti složenije zadatke sa površinom i zapreminom</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contentContainer">
+                        <h2>Kako se računa zapremina pravilne četvorostrane prizme</h2>
+
+                        <div class="contentContainer">
+                            <p class="shadowText"><span style="color: orange; font-weight: bold;">Zapremina pravilne
+                                    četvorostrane prizme</span> računa se kao proizvod površine baze i visine prizme</p>
+
+                        </div>
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Površina baze (kvadrata koji predstavlja bazu)</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Osnova pravilne četvorostrane prizme je kvadrat. Površina kvadrata može se izračunati
+                                pomoću formule:</p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ B = a^2 $$
+                            </p>
+
+                            <p>\( a \) - dužina stranice kvadrata (baze). <span class="geogebra"
+                                    onclick="toggleIframe('iframe1')">(Pogledaj sliku)</span></p>
+
+                            <div id="iframe1" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/u2ntgaap?embed" showMenuBar=false, width="100%"
+                                    height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="contentContainer">
+                            <div style="width: fit-content; margin-bottom: 30px;">
+                                <h2 style="padding: 0; margin: 0;">Ukupna zapremina prizme</h2>
+                                <div class="smallUnderline"></div>
+                            </div>
+
+                            <p>Zapremina pravilne četvorostrane prizme se računa:</p>
+
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ V = B \cdot H $$
+                            </p>
+
+                            <p>Nakon ubacivanja površine baze:</p>
+                            <p class="shadowText" style="font-size: medium; margin: auto;">
+                                $$ V = a^2 \cdot H $$
+
+                            </p>
+
+                            <p>Crvenom bojom je označena baza prizme, a crvenom linijom visina <span class="geogebra"
+                                    onclick="toggleIframe('iframe2')">(Pogledaj sliku)</span></p>
+
+                            <div id="iframe2" class="iframe-container">
+                                <iframe src="https://www.geogebra.org/3d/ajpyapge?embed" width="100%" height="600"
+                                    allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;"
+                                    frameborder="0"></iframe>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="questionArea">
+                        <h2>Zadaci:</h2>
+                        <div class="shadowText" style="display: flex; align-items: start; gap: 14px; width: 100%;">
+                            <div style="padding-top: 4px;">
+                                <div
+                                    style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                    1</div>
+                            </div>
+                            <div>
+                                Izračunaj površinu i zapreminu pravilne četvorostrane prizme ako je:
+                                <br>
+                                <br>
+                                a) dužina njene osnovne ivice \(2\,\text{cm}\), a visina za \(2\,\text{cm}\) duža od
+                                osnovne ivice.
+                                <br>
+                                b) Obim osnove \(24\,\text{cm}\), a visina \(7\,\text{cm}\).
+                            </div>
+                        </div>
+
+                        <p class="shadowText">a)</p>
+                        <div class="questionArea" style="display: flex; gap: 70px; justify-content: center;">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="../../Assets/Zadatak3.png" alt="Slika Zadatka 1" width="fit-content"
+                                    height="250px">
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+                                <div>
+                                    $$a = 2\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$H = a + 2\,\text{cm} = 4\,\text{cm}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$B = a^2 = 2^2 = 4\,\text{cm}^2$$
+                                </div>
+
+                                <div>
+                                    $$M = 4 \cdot a \cdot H$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$M = 4 \cdot 2 \cdot 4 = 32\,\text{cm}^2$$
+                                </div>
+
+                            </div>
+
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                                <div>
+                                    $$P = 2B + M$$
+                                </div>
+
+                                <div>
+                                    $$P = 2 \cdot 4 + 32$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$P = 40\,\text{cm}^2$$
+                                </div>
+
+                                <div>
+                                    $$V = B \cdot H$$
+                                </div>
+
+                                <div>
+                                    $$V = 4 \cdot 4$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$V = 16\,\text{cm}^3$$
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <p class="shadowText">b)</p>
+
+                        <div style="display: flex; flex-direction: row; gap: 70px; justify-content: center;">
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$H = 7\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$\text{O osnove} = 24\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$4 \cdot a = 24\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$a = 6\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$B = a^2 = 36\,\text{cm}^2$$
+                                </div>
+
+                                <div>
+                                    $$M = 4 \cdot a \cdot H = 4 \cdot 6 \cdot 7 = 168\,\text{cm}^2$$
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                                <div>
+                                    $$P = 2B + M$$
+                                </div>
+
+                                <div>
+                                    $$P = 2 \cdot 36 + 168$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$P = 240\,\text{cm}^2$$
+                                </div>
+
+                                <div>
+                                    $$V = B \cdot H$$
+                                </div>
+
+                                <div>
+                                    $$V = 36 \cdot 7$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$V = 252\,\text{cm}^3$$
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="questionArea">
+                        <div class="shadowText" style="display: flex; align-items: start; gap: 14px;">
+                            <div style="padding-top: 4px;">
+                                <div
+                                    style="display: flex; justify-content: center; align-items: center; border-radius: 100%; height: 20px; width: 20px; color: white; background-color: orange;">
+                                    2</div>
+                            </div>
+                            <div>
+                                Površina pravilne četvorostrane prizme je \(288\,\text{cm}^2\), a površina njenog
+                                omotača \(160\,\text{cm}^2\). Izračunaj zapreminu te prizme.
+                            </div>
+                        </div>
+
+                        <div class="questionArea" style="display: flex; gap: 70px; justify-content: center;">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="../../Assets/Zadatak3.png" alt="Slika Zadatka 1" width="fit-content"
+                                    height="250px">
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+                                <div>
+                                    $$P = 288\,\text{cm}^2$$
+                                </div>
+
+                                <div>
+                                    $$M = 160\,\text{cm}^2$$
+                                </div>
+
+                                <div>
+                                    $$P = 2B + M$$
+                                </div>
+
+                                <div>
+                                    $$2B = P - M$$
+                                </div>
+
+                                <div>
+                                    $$2B = 288 - 160$$
+                                </div>
+
+                                <div>
+                                    $$2B = 128$$
+                                </div>
+
+                                <div>
+                                    $$B = 64\,\text{cm}^2$$
+                                </div>
+
+                                <div>
+                                    $$a^2 = 64$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$a = 8\,\text{cm}$$
+                                </div>
+
+
+                            </div>
+
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+
+                                <div>
+                                    $$M = 4 \cdot a \cdot H$$
+                                </div>
+
+                                <div>
+                                    $$160 = 4 \cdot a \cdot H$$
+                                </div>
+
+                                <div>
+                                    $$a \cdot H = 40$$
+                                </div>
+
+                                <div>
+                                    $$H = \frac{40}{a}$$
+                                </div>
+
+                                <div>
+                                    $$H = \frac{40}{8}$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$H = 5\,\text{cm}$$
+                                </div>
+
+                                <div>
+                                    $$V = B \cdot H$$
+                                </div>
+
+                                <div>
+                                    $$V = 64 \cdot 5$$
+                                </div>
+
+                                <div style="border-bottom: 1px solid orange;">
+                                    $$V = 320\,\text{cm}^3$$
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-left: 4px solid #ff9800; border-radius: 8px; padding: 15px 20px; margin-top: 30px;">
+                        <h3 style="color: #e65100; margin-bottom: 8px; font-size: 1.1em;">🤔 Da li si znao?</h3>
+                        <p>Akvarijum je obično oblika <b>četvorostrane prizme</b> (kvadra)! Ako imaš akvarijum dimenzija
+                            60×30×30 cm, njegova zapremina je \( 60 \cdot 30 \cdot 30 = 54.000 \, \text{cm}^3 \), što je
+                            <b>54 litra</b> vode.
+                        </p>
+                    </div>
+
+                    <div
+                        style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 4px solid #1976d2; border-radius: 8px; padding: 20px 25px; margin-top: 30px;">
+                        <h3 style="color: #1565c0; margin-bottom: 10px;">📝 Rezime lekcije</h3>
+                        <ul style="padding-left: 20px;">
+                            <li><b>Površina baze (kvadrat):</b> \( B = a^2 \)</li>
+                            <li><b>Zapremina:</b> \( V = B \cdot H = a^2 \cdot H \)</li>
+                            <li><b>Kocka:</b> \( V = a^3 \) (specijalan slučaj kada je \( a = H \))</li>
+                        </ul>
+                    </div>
+
+                    <div id="lesson-quiz"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../quiz.js"></script>
+    <script>
+        initQuiz('lesson-quiz', [
+            {
+                type: 'multiple-choice',
+                question: 'Kolika je zapremina pravilne četvorostrane prizme sa a = 5 cm i H = 10 cm?',
+                options: ['50 cm³', '100 cm³', '250 cm³', '500 cm³'],
+                correct: 2
+            },
+            {
+                type: 'true-false',
+                question: 'Kocka je specijalan slučaj pravilne četvorostrane prizme gde je a = H.',
+                correct: 0
+            },
+            {
+                type: 'multiple-choice',
+                question: 'Koja je formula za zapreminu kocke?',
+                options: ['V = a²', 'V = 6a²', 'V = a³', 'V = 4a³'],
+                correct: 2
+            }
+        ]);
+    </script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>
