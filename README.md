@@ -1,4 +1,4 @@
-# 🔷 Prizma i Piramida — Elektronske lekcije
+# Prizma i Piramida — Elektronske lekcije
 
 Interaktivna web aplikacija sa elektronskim lekcijama iz prostorne geometrije, namenjena učenicima osnovne škole. Projekat je kreiran u okviru master rada sa ciljem da učenicima olakša savladavanje gradiva iz oblasti prizme i piramide koristeći savremene nastavne alate.
 
@@ -15,7 +15,7 @@ Interaktivna web aplikacija sa elektronskim lekcijama iz prostorne geometrije, n
 
 ---
 
-## 📖 O projektu
+## O projektu
 
 Aplikacija sadrži **38 interaktivnih lekcija** organizovanih u dve tematske celine — **Prizma** i **Piramida**. Svaka lekcija uključuje teorijska objašnjenja, vizuelne prikaze, formule, rešene zadatke, interaktivne 3D modele i kviz za samoproveru znanja.
 
@@ -29,7 +29,7 @@ Aplikacija sadrži **38 interaktivnih lekcija** organizovanih u dve tematske cel
 
 ---
 
-## 📚 Struktura lekcija
+## Struktura lekcija
 
 ### Prizma (18 lekcija)
 
@@ -62,7 +62,7 @@ Aplikacija sadrži **38 interaktivnih lekcija** organizovanih u dve tematske cel
 
 ---
 
-## 🛠 Tehnologije
+## Tehnologije
 
 | Tehnologija | Namena |
 |---|---|
@@ -75,7 +75,7 @@ Projekat ne zahteva nikakav build sistem — sve su čisti HTML/CSS/JS fajlovi k
 
 ---
 
-## 🚀 Pokretanje projekta
+## Pokretanje projekta
 
 ### Preduslov
 
@@ -103,7 +103,7 @@ Projekat ne zahteva nikakav build sistem — sve su čisti HTML/CSS/JS fajlovi k
 
 ---
 
-## 📁 Struktura fajlova
+##  Struktura fajlova
 
 ```
 projekatWeb/
@@ -140,9 +140,9 @@ projekatWeb/
 
 ---
 
-## ⚡ Interaktivne funkcionalnosti
+##  Interaktivne funkcionalnosti
 
-### 🧩 Kvizovi za samoproveru
+###  Kvizovi za samoproveru
 
 Svaka lekcija sadrži kviz na kraju stranice. Kviz podržava dva tipa pitanja:
 - **Multiple-choice** — izbor jednog tačnog odgovora od ponuđenih
@@ -150,11 +150,11 @@ Svaka lekcija sadrži kviz na kraju stranice. Kviz podržava dva tipa pitanja:
 
 Nakon odgovaranja, učenik dobija instant povratnu informaciju sa obeleženim tačnim i netačnim odgovorima i konačnim rezultatom. Kviz je moguće ponoviti neograničen broj puta.
 
-### 🌐 GeoGebra 3D modeli
+###  GeoGebra 3D modeli
 
 Lekcije sadrže ugrađene interaktivne 3D modele koji se prikazuju klikom na odgovarajuće dugme. Modeli omogućavaju rotiranje, zumiranje i posmatranje geometrijskih tela iz različitih uglova, čime se razvija prostorno mišljenje učenika.
 
-### 📝 Rešeni zadaci
+###  Rešeni zadaci
 
 Obogaćene lekcije sadrže rešene zadatke sa sakrivenim rešenjima. Učenik može sam da pokuša da reši zadatak, a zatim klikom na dugme „Prikaži rešenje" da proveri svoj postupak.
 
@@ -164,6 +164,6 @@ Lekcije o crtanju prizme i piramide sadrže stepenasta uputstva gde se svaki kor
 
 ---
 
-## 📄 Licenca
+##  Licenca
 
 Ovaj projekat je kreiran u okviru master rada. Sva prava zadržana.

@@ -5,7 +5,6 @@
  */
 
 (function () {
-    // --- PATH DETECTION ---
     function getBasePath() {
         var link = document.querySelector('link[rel="stylesheet"][href*="style.css"]');
         if (!link) return '';
